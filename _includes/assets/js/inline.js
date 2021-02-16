@@ -40,39 +40,3 @@ function closeNav() {
   $(".mobile-sidenav").css('width', '0');
   $(".overlay").css('width', "0");
 }
-
-jQuery(document).ready(function($){
-
-  if (sessionStorage.getItem('advertOnce') !== 'true') {
-  //sessionStorage.setItem('advertOnce','true');
-    $('.box').show();
-    $( "html" ).addClass( "no-entry" );
-    $('.overlay-verify').show();
-  }else{
-    $( "html" ).addClass( "entry" );
-    $('.box').hide();
-    $( ".overlay" ).toggleClass( "overlay-verify" );
-    $('.overlay-verify').hide();
-  }
-   
-  $('#refresh-page').on('click',function(){
-  $('.box').hide();
-  sessionStorage.setItem('advertOnce','true');
-  setTimeout(
-    function() 
-    {
-      location.reload();
-    }, 300);
-  });
-    
-  $('#reset-session').on('click',function(){
-  $('.box').show();
-  sessionStorage.setItem('advertOnce','');
-  setTimeout(
-    function() 
-    {
-      window.history.back();
-    }, 300);
-  });
-   
-  });
