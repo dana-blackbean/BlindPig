@@ -16,11 +16,10 @@ favorites_items:
   - image: /static/img/photo-frame.png
   - image: /static/img/photo-frame.png
   - image: /static/img/photo-frame.png
-menu:
-  - title: Our Menu
-  - subtitle: For yourself or to share
-  - text: Lorem ipsum
-  - button: See the Menu!
+menu_title: Our Menu
+menu_subtitle: For yourself or to share 
+menu_text: Lorem ipsum
+menu_button: See the Menu!
 contact:
   - title: Contact Us
   - text: Lorem Ipsum

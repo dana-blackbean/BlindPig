@@ -46,6 +46,9 @@ collections:
                   { label: "Image", name: "image", widget: "string" },
                 ],
             }
+          - { label: "Menu title", name: "menu_title", widget: "text" }
+          - { label: "Menu subtitle", name: "menu_subtitle", widget: "text" }
+          - { label: "Menu button", name: "menu_button", widget: "text" }
           - {
               label: "FAQ",
               name: "faq",
