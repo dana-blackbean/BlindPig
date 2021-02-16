@@ -2,8 +2,17 @@ body {
     font-family: open-sans,sans-serif;
     font-weight: 400;
     font-style: normal;
-    size: 18px;
     letter-spacing: 1px;
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1150px;
+    }
+}
+
+p {
+    line-height: 1.9;
 }
 
 h1 {
@@ -16,6 +25,7 @@ h1 {
 
 h2 {
     font-family: rosella-hatched,sans-serif;
+    font-size: 52px;
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
@@ -29,8 +39,19 @@ h3 {
     font-style: normal;
 }
 
+h4 {
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    font-family: merriweather, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
 .bg-dark { background: #2D1611; }
 .bg-medium { background: #E4D8D5; }
+.text-dark { color: #2D1611; }
+.text-medium { color: #E4D8D5; }
 
 .nav-link {
     font-size: 20px;
@@ -56,33 +77,63 @@ h3 {
 .hero-subtitle {
     color: #CCA025;
     padding-top: 0.25rem;
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.4rem;
 }
 
 .hero {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
     background: #fff;
 }
 
 .favorites {
-    padding-top: 3rem;
+    padding-top: 6rem;
     padding-bottom: 3rem;
     background: #2D1611;
+    text-align: center;
+}
+
+.contact {
+    padding-top: 6rem;
+    padding-bottom: 3rem;
+    background: #E4D8D5;
+}
+
+.favorites > .img-flourish-top {
+    background: url('/static/img/flourish_top.png');
+    width: 100%;
+    height: 100%;
+}
+
+.favorites > .img-flourish-bottom {
+    background: url('/static/img/flourish_bottom.png');
+}
+
+.favorites > .content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.favorites > h4 {
+    padding-bottom: 0.5rem;
 }
 
 .btn-hero {
-    padding: 0.15rem 0.35rem;
     background: #CCA025;
     text-transform: uppercase;
-    font-size: 1.1rem;
-    font-weight: 900;
+    font-size: 1.3em;
+    font-weight: 400;
+    letter-spacing: -1px;
     border: 2px solid #CCA025;
     color: #2D1611;
+    transition: ease-in-out 0.2s;
 }
 
 .btn {
-    padding: 10px 30px;
+    font-family: open-sans, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 15px 40px;
 }
 
 .btn-hero:hover {

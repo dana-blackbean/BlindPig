@@ -3,26 +3,47 @@ layout: layouts/base.njk
 section: home
 ---
 <section class="hero">
-    <div class="max-w-screen-xl px-2 mx-auto">
+    <div class="container mx-auto">
         <h1>The</h1>
         <h1>{{ preview_title }}</h1>
         <h3 class="hero-subtitle">{{ preview_subtitle }}</h3>
         <p>
             {{ preview_text }}
         </p>
-        <a href="/./#story" class="btn btn-hero">Our Story</a>
+        <div class="mt-10">
+            <a href="/./#story" class="btn btn-hero">Our Story</a>
+        </div>
     </div>
     <div class="hero-img-black"></div>
 </section>
 
 <section class="favorites">
-    <div className="img-flourish-top"></div>
-    <div>
-        <h2>{{ favorites_title }}</h2>
+    <div class="container mx-auto">
+        <div class="w-32 opacity-50 mx-auto">
+            <img src="/static/img/flourish_top.png" alt="flourish top" />
+        </div>
+        <div class="content text-medium">
+            <h4>{{ favorites_title }}</h4>
+            <p>
+                {{ favorites_subtitle }}
+            </p>
+        </div>
+        <div class="flex flex-wrap justify-center py-3">
+            {%- for item in favorites_items %}
+                <div class="w-full lg:w-1/4 p-2 lg:p-4">
+                    <img src="/static/img/photo-frame.png" class="w-full h-auto" />
+                </div>
+            {%- endfor %}
+        </div>
+        <div class="w-32 opacity-50 mx-auto">
+            <img src="/static/img/flourish_bottom.png" alt="flourish top" />
+        </div>
     </div>
-    <div className="img-flourish-top"></div>
 </section>
 
+<section class="contact">
+
+</section>
 
 <!--
 <section id="faq" class="faq">
