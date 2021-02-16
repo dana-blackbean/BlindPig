@@ -71,7 +71,16 @@ h3 {
     background: #2D1611;
 }
 
+.favorites > .img-flourish-top {
+    background: url('/static/img/flourish_top.png');
+}
+
+.favorites > .img-flourish-bottom {
+    background: url('/static/img/flourish_bottom.png');
+}
+
 .btn-hero {
+    margin-top: 0.3rem;
     padding: 0.15rem 0.35rem;
     background: #CCA025;
     text-transform: uppercase;
