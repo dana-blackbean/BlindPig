@@ -24,8 +24,8 @@ menu_text: Lore ipsum dolor sit amet, consecteteur adipiscing elit, se ddiam non
     ore ipsum dolor sit amet, consecteteur adipiscing elit, se ddiam nonummy
     ore ipsum dolor sit amet, consecteteur adipiscing elit, se ddiam nonummy
 menu_button: See the Menu
-contact:
-  - title: Contact Us
-  - text: Lorem Ipsum
+contact_title: Contact Us
+contact_text: Lorem Ipsum dolor sit amet, consectetur adisipicing elit, sed diam nonummy nibh euismod tincuident ut laoreet
+contact_button: Submit
 title: Home
 ---

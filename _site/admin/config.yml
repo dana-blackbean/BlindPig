@@ -49,17 +49,9 @@ collections:
           - { label: "Menu title", name: "menu_title", widget: "text" }
           - { label: "Menu subtitle", name: "menu_subtitle", widget: "text" }
           - { label: "Menu button", name: "menu_button", widget: "text" }
-          - {
-              label: "FAQ",
-              name: "faq",
-              widget: "list",
-              allow_add: true,
-              fields:
-                [
-                  { label: "Question", name: "question", widget: "string" },
-                  { label: "Answer", name: "answer", widget: "string" },
-                ],
-            }
+          - { label: "Contact title", name: "contact_title", widget: "text" }
+          - { label: "Contact subtitle", name: "contact_subtitle", widget: "text" }
+          - { label: "Contact submit button", name: "contact_button", widget: "text" }
       - file: "pages/privacy-policy.md"
         label: "Privacy Policy"
         name: "privacy_policy"

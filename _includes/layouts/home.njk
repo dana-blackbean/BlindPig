@@ -10,14 +10,13 @@ section: home
             {{ preview_text }}
         </p>
         <div class="mt-10">
-            <a href="/./#story" class="btn btn-hero">Our Story</a>
+            <a href="/./#story" class="btn btn-invert">Our Story</a>
         </div>
     </div>
     <div class="hero-img-black"></div>
 </section>
 
 <section class="favorites">
-    <div class="container mx-auto">
         <div class="w-32 opacity-50 mx-auto">
             <img src="/static/img/flourish_top.png" alt="flourish top" />
         </div>
@@ -40,7 +39,6 @@ section: home
         <div class="w-32 opacity-50 mx-auto">
             <img src="/static/img/flourish_bottom.png" alt="flourish top" />
         </div>
-    </div>
 </section>
 
 <section class="menu flex">
@@ -62,70 +60,42 @@ section: home
 </section>
 
 <section class="contact">
+    <div class="max-w-screen-md px-2 mx-auto">
+        <div class="text-center">
+            <h2>{{ contact_title }}</h2>
+            <p>{{ contact_text }}</p>
+        </div>
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+            <input type="hidden" name="form-name" value="contact">
+            <div class="flex flex-wrap">
+                <div class="w-full md:w-1/2 p-1">
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" type="text" required />
+                </div>
 
-</section>
+                <div class="w-full md:w-1/2 p-1">
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" type="text" required />
+                </div>
 
-<!--
-<section id="faq" class="faq">
-  <div class="wrapper">
-    <div class="faq-container">
-      <h2>Have a Question? Check out our FAQ</h2>
-      <ul>
-        {%- for entry in favorites_items %}
-        <span>
-            {{entry.image}}
-        </span>
-        {%- endfor %}
-      </ul>
-      <p>Can’t find what you are looking for? <a href="#contact">Contact us </a></p>
+                <div class="w-full md:w-1/2 p-1">
+                    <label for="emailAddress">Email Address</label>
+                    <input id="emailAddress" type="text" required />
+                </div>
+
+                <div class="w-full md:w-1/2 p-1">
+                    <label for="phoneNumber">Phone Number</label>
+                    <input id="phoneNumber" type="tel" required />
+                </div>
+
+                <div class="w-full p-1">
+                    <label for="messageContent">Message</label>
+                    <textarea id="messageContent" type="text" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="mt-10">
+                <button type="submit" class="btn btn-invert">{{ contact_button }}</button>
+            </div>
+        </form>
     </div>
-  </div>
 </section>
-<section class="learn-more">
-  <div class="icon"></div>
-  <div class="wrapper">
-    <div class="learn-more-container">
-      <h2>
-        Want to Learn More? Get in Touch!
-      </h2>
-      <p>
-      Something on your mind? We’re all ears. Enter your info below and we’ll contact you in 24 hours or less.
-      </p>
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
-        <img src="/static/img/1-2triangles.png" alt="">
-        <input type="hidden" name="form-name" value="contact">
-        <div class="form-row">
-          <input placeholder="First Name" name="first_name" type="text">
-          <input placeholder="Last Name" name="last_name" type="text">
-        </div>
-        <div class="form-row">
-          <input placeholder="Email" name="email" type="text">
-          <input placeholder="Phone Number" name="phone" type="tel">
-        </div>
-         <div class="form-row">
-          <textarea id="form-message" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-maxlength="300" data-parsley-validation-threshold="10" placeholder="Message Here (300 chars max)"></textarea>
-        </div>
-        <button type="submit">Submit</button>
-      </form>
-    </div>
-  </div>
-</section>
-<section id="newsletter" class="mailing">
-  <div class="wrapper">
-    <img class="logo-section" src="/static/img/green-logo-triangles-newsletter.png">
-    <div class="mailing-container">
-      <h2>
-        Mountain Cannabis Co. Newsletter
-      </h2>
-      <p>
-        Never miss out on the latest updates from Mountain Cannabis Co - Join today for exclusive promotions, new product information, and local event announcements.
-      </p>
-      <form name="newsletter" method="POST" data-netlify="true" action="/thank-you" netlify-honeypot="bot-field">
-        <input type="hidden" name="form-name" value="newsletter">
-        <input placeholder="Email Address" name="email" type="email">
-        <button type="submit">Subscribe</button>
-      </form>
-    </div>
-  </div>
-</section>
--->

@@ -29,6 +29,7 @@ h2 {
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 h3 {
@@ -39,13 +40,26 @@ h3 {
     font-style: normal;
 }
 
-h4 {
+h4, label {
     font-size: 20px;
-    letter-spacing: 4px;
     text-transform: uppercase;
     font-family: merriweather, serif;
     font-weight: 700;
     font-style: normal;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 0.2rem;
+    border: 1px solid #2D1611;
+    color: #2D1611;
+    background: transparent;
+    margin-bottom: 1rem;
+}
+
+label {
+    padding-bottom: 0.2rem;
 }
 
 .bg-dark { background: #2D1611; }
@@ -124,13 +138,17 @@ h4 {
     background: #E4D8D5;
 }
 
-.btn-hero {
+.contact p {
+    padding-bottom: 2rem;
+}
+
+.btn-invert {
     background: #CCA025;
     border: 2px solid #CCA025;
     color: #2D1611;
 }
 
-.btn-hero:hover {
+.btn-invert:hover {
     background: transparent;
     border-color: #CCA025;
 }
@@ -150,7 +168,7 @@ h4 {
     font-family: prohibition, sans-serif;
     font-weight: 400;
     font-style: normal;
-    padding: 15px 40px;
+    padding: 10px 40px;
     text-transform: uppercase;
     font-size: 1.3em;
     transition: ease-in-out .25s;
