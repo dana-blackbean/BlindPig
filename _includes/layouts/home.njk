@@ -2,31 +2,24 @@
 layout: layouts/base.njk
 section: home
 ---
-<section class="preview">
-  <div class="wrapper">
-    <div class="info-container">
-      <div class="info">
-        <h1>
-          {{ preview_title }}
-        </h1>
-        <p>{{preview_text}}</p>
-      </div>
+<section class="hero">
+    <div class="max-w-screen-xl px-2 mx-auto">
+        <h1>{{ preview_title }}</h1>
+        <h3 class="hero-subtitle">{{ preview_subtitle }}</h3>
+        <p>
+            {{ preview_text }}
+        </p>
+        <a href="/./#story" class="btn btn-hero">Our Story</a>
     </div>
-  </div>
-  <div id="about" class="purple">
-      <div class="wrapper">
-    <img class="hero-triangles" src="{{hero_image}}" alt="">
-    </div>
-    <div class="icon"></div>
-    <div class="wrapper">
-      <div class="purple-about">
-        <img class="logo-section" src="/static/img/marijuana-icon.png">
-        <h2>{{purple_title}}</h2>
-        <p>{{purple_text}}</p>
-      </div>
-    </div>
-  </div>
+    <div class="hero-img-black"></div>
 </section>
+
+<section class="favorites">
+
+</section>
+
+
+<!--
 <section id="faq" class="faq">
   <div class="wrapper">
     <div class="faq-container">
@@ -89,3 +82,4 @@ section: home
     </div>
   </div>
 </section>
+-->

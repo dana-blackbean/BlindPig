@@ -1,0 +1,95 @@
+body {
+    font-family: open-sans,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    size: 18px;
+    letter-spacing: 1px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: rosella-hatched,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: rosella-hatched,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: merriweather, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.bg-dark { background: #2D1611; }
+.bg-medium { background: #E4D8D5; }
+
+.nav-link {
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #fff;
+
+    font-family: prohibition, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.hero-img-black {
+    position: absolute;
+    right: 0;
+    height: 250px;
+    width: 250px;
+    background-size: contain;
+    background: url('/static/img/blind-pig.png');
+}
+
+.hero-subtitle {
+    color: #CCA025;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.hero {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: #fff;
+}
+
+.favorites {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background: #2D1611;
+}
+
+.btn-hero {
+    padding: 0.15rem 0.35rem;
+    background: #CCA025;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 900;
+    border: 2px solid #CCA025;
+    color: #2D1611;
+}
+
+.btn {
+    padding: 10px 30px;
+}
+
+.btn-hero:hover {
+    background: #FFF;
+    border-color: #CCA025;
+}
+
+.footer {
+    background: #2D1611;
+}

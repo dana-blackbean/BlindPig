@@ -2,39 +2,26 @@
 <html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
 
   {% include "components/head.njk" %}
-
-  <main>
-
-  	<svg id="fader"></svg>
-	<script>
-            fadeInPage();
-        </script>
-
-</main>
+    <!--
+      <main>
+            <svg id="fader"></svg>
+            <script>
+                fadeInPage();
+            </script>
+      </main>
+      -->
 
   <body>
 
-    <header class="header">
-      <div class="wrapper">
-        <em>
-          <a class="logo" href="{{ '/' | url }}">
-            <img src="{{metadata.logo}}">
-          </a>
-        </em>
-        {% include "components/nav.njk" %}
-      </div>
-    </header>
-    <header class="header-mobile">
-      <div class="wrapper">
-        <em>
-          <a class="logo" href="{{ '/' | url }}">
-            <img src="{{metadata.logo}}">
-          </a>
-        </em>
-        <button class="btn-nav">
-          <img src="/static/img/mobile_nav_button.png">
-        </button>
-        {% include "components/navmobile.njk" %}
+    <header class="bg-black">
+      {% include "components/nav.njk" %}
+      <div class="block flex lg:hidden">
+        <div class="w-16 mr-auto">
+            <img src="/static/img/blind-pig_white.png" alt="blind pig" />
+        </div>
+        <div class="w-auto">
+            {% include "components/navmobile.njk" %}
+        </div>
       </div>
     </header>
 

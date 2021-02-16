@@ -30,8 +30,9 @@
   <meta name="twitter:image" content="{{ settings.social_image }}">
   <script async src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
   {% set css %}
-    {% include "assets/css/normalize.css" %}
-    {% include "assets/css/inline.css" %}
+    {% include "assets/css/tailwind.min.css" %}
+    {% include "assets/css/typekit.css" %}
+    {% include "assets/css/app.css" %}
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
   {% set js %}

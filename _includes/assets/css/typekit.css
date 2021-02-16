@@ -1,0 +1,56 @@
+/*
+ * The Typekit service used to deliver this font or fonts for use on websites
+ * is provided by Adobe and is subject to these Terms of Use
+ * http://www.adobe.com/products/eulas/tou_typekit. For font license
+ * information, see the list below.
+ *
+ * merriweather:
+ *   - http://typekit.com/eulas/00000000000000007735a0e6
+ * open-sans:
+ *   - http://typekit.com/eulas/00000000000000007735a07a
+ * prohibition:
+ *   - http://typekit.com/eulas/00000000000000007735a647
+ *   - http://typekit.com/eulas/00000000000000007735a64d
+ * rosella-hatched:
+ *   - http://typekit.com/eulas/00000000000000007735ba8b
+ *
+ * © 2009-2020 Adobe Systems Incorporated. All Rights Reserved.
+ */
+/*{"last_published":"2021-02-16 18:52:02 UTC"}*/
+
+@import url("https://p.typekit.net/p.css?s=1&k=yuh2knw&ht=tk&f=14548.15759.25326.25327.39662&a=40927098&app=typekit&e=css");
+
+@font-face {
+font-family:"open-sans";
+src:url("https://use.typekit.net/af/f18587/00000000000000007735a07a/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/f18587/00000000000000007735a07a/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/f18587/00000000000000007735a07a/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"merriweather";
+src:url("https://use.typekit.net/af/6f8ff4/00000000000000007735a0e6/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/6f8ff4/00000000000000007735a0e6/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/6f8ff4/00000000000000007735a0e6/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:700;
+}
+
+@font-face {
+font-family:"prohibition";
+src:url("https://use.typekit.net/af/e08777/00000000000000007735a647/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"),url("https://use.typekit.net/af/e08777/00000000000000007735a647/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"),url("https://use.typekit.net/af/e08777/00000000000000007735a647/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+font-display:auto;font-style:italic;font-weight:400;
+}
+
+@font-face {
+font-family:"prohibition";
+src:url("https://use.typekit.net/af/7b9767/00000000000000007735a64d/30/l?subset_id=2&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/7b9767/00000000000000007735a64d/30/d?subset_id=2&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/7b9767/00000000000000007735a64d/30/a?subset_id=2&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+@font-face {
+font-family:"rosella-hatched";
+src:url("https://use.typekit.net/af/30083a/00000000000000007735ba8b/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/30083a/00000000000000007735ba8b/30/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/30083a/00000000000000007735ba8b/30/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+font-display:auto;font-style:normal;font-weight:400;
+}
+
+.tk-open-sans { font-family: "open-sans",sans-serif; }
+.tk-merriweather { font-family: "merriweather",serif; }
+.tk-prohibition { font-family: "prohibition",sans-serif; }
+.tk-rosella-hatched { font-family: "rosella-hatched",sans-serif; }
