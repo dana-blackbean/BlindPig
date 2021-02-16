@@ -6,9 +6,9 @@ section: home
   <div class="wrapper">
     <div class="info-container">
       <div class="info">
-        <h2>
+        <h1>
           {{ preview_title }}
-        </h2>
+        </h1>
         <p>{{preview_text}}</p>
       </div>
     </div>
@@ -32,15 +32,10 @@ section: home
     <div class="faq-container">
       <h2>Have a Question? Check out our FAQ</h2>
       <ul>
-        {%- for entry in faq %}
-        <li class="faq-list-item">
-          <p class="faq-question">
-            {{entry.question}}
-          </p>
-          <p class="faq-answer">
-            {{entry.answer}}
-          </p>
-        </li>
+        {%- for entry in favorites_items %}
+        <span>
+            {{entry.image}}
+        </span>
         {%- endfor %}
       </ul>
       <p>Can’t find what you are looking for? <a href="#contact">Contact us </a></p>

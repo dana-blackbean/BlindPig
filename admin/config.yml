@@ -28,10 +28,24 @@ collections:
               name: "preview_title",
               widget: "text",
             }
+          - { label: "Preview subtitle", name: "preview_subtitle", widget: "text" }
           - { label: "Preview text", name: "preview_text", widget: "text" }
           - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Hero Button", name: "hero_button", widget: "text" }
           - { label: "Purple title", name: "purple_title", widget: "text" }
           - { label: "Purple text", name: "purple_text", widget: "text" }
+          - { label: "Favorites text", name: "favorites_title", widget: "text" }
+          - { label: "Favorites button", name: "favorites_button", widget: "text" }
+          - {
+              label: "Favorites",
+              name: "favorites_items",
+              widget: "list",
+              allow_add: true,
+              fields:
+                [
+                  { label: "Image", name: "image", widget: "string" },
+                ],
+            }
           - {
               label: "FAQ",
               name: "faq",
