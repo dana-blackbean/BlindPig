@@ -27,13 +27,14 @@ section: home
             <p>
                 {{ favorites_subtitle }}
             </p>
-        </div>
-        <div class="flex flex-wrap justify-center py-3">
-            {%- for item in favorites_items %}
-                <div class="w-full lg:w-1/4 p-2 lg:p-4">
-                    <img src="/static/img/photo-frame.png" class="w-full h-auto" />
-                </div>
-            {%- endfor %}
+            <div class="flex flex-wrap justify-center py-3">
+                {%- for item in favorites_items %}
+                    <div class="w-full lg:w-1/4 p-2 lg:p-4">
+                        <img src="/static/img/photo-frame.png" class="w-full h-auto" />
+                    </div>
+                {%- endfor %}
+            </div>
+
         </div>
         <div class="w-32 opacity-50 mx-auto">
             <img src="/static/img/flourish_bottom.png" alt="flourish top" />
