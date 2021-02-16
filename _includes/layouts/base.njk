@@ -1,0 +1,67 @@
+<!doctype html>
+<html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
+
+  {% include "components/head.njk" %}
+
+  <main>
+
+  	<svg id="fader"></svg>
+	<script>
+            fadeInPage();
+        </script>
+
+  <article class="box">
+    <div class="box-right">
+      <h3>Age Verification</h3>
+      <p>By clicking enter, I certify that I am over the age of 19 and will comply with the above statement.</p>
+      
+      <a href="" class="btn btn-alpha"  id="refresh-page">ENTER</a>
+      
+      <p class="decor-line"><span>Or</span></p>
+      
+      <a onclick="history.back();" class="btn btn-beta" id="reset-session">EXIT</a>
+      
+      <small>Always enjoy responsibily.</small>
+    </div>
+    </div>
+  </article>
+  
+  <div class="overlay-verify"></div>
+</main>
+
+  <body>
+
+    <header class="header">
+      <div class="wrapper">
+        <em>
+          <a class="logo" href="{{ '/' | url }}">
+            <img src="{{metadata.logo}}">
+          </a>
+        </em>
+        {% include "components/nav.njk" %}
+      </div>
+    </header>
+    <header class="header-mobile">
+      <div class="wrapper">
+        <em>
+          <a class="logo" href="{{ '/' | url }}">
+            <img src="{{metadata.logo}}">
+          </a>
+        </em>
+        <button class="btn-nav">
+          <img src="/static/img/mobile_nav_button.png">
+        </button>
+        {% include "components/navmobile.njk" %}
+      </div>
+    </header>
+
+    <main>
+      {{ layoutContent | safe }}
+    </main>
+
+    {% include "components/footer.njk" %}
+
+
+  </body>
+
+</html>

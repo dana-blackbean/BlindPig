@@ -1,0 +1,86 @@
+backend:
+  name: git-gateway
+  branch: master # Branch to update (optional; defaults to master)
+
+# Uncomment below to enable drafts
+# publish_mode: editorial_workflow
+
+media_folder: "static/img" # Media files will be stored in the repo under images/uploads
+
+collections:
+  # Our pages e.g. About
+  - name: "pages"
+    label: "Page"
+    files:
+      - file: "pages/home.md"
+        label: "Home Page"
+        name: "home"
+        fields:
+          - {
+              label: "layout",
+              name: "layout",
+              default: "layouts/home.njk",
+              widget: "hidden",
+            }
+          - { label: "Permalink", name: "permalink", widget: "text" }
+          - {
+              label: "Preview title",
+              name: "preview_title",
+              widget: "text",
+            }
+          - { label: "Preview text", name: "preview_text", widget: "text" }
+          - { label: "Hero Image", name: "hero_image", widget: "image" }
+          - { label: "Purple title", name: "purple_title", widget: "text" }
+          - { label: "Purple text", name: "purple_text", widget: "text" }
+          - {
+              label: "FAQ",
+              name: "faq",
+              widget: "list",
+              allow_add: true,
+              fields:
+                [
+                  { label: "Question", name: "question", widget: "string" },
+                  { label: "Answer", name: "answer", widget: "string" },
+                ],
+            }
+      - file: "pages/privacy-policy.md"
+        label: "Privacy Policy"
+        name: "privacy_policy"
+        fields:
+          - {
+              label: "layout",
+              name: "layout",
+              default: "layouts/page.njk",
+              widget: "hidden",
+            }
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Page Content", name: "subpage_content", widget: "markdown" }  
+      - file: "pages/shop.md"
+        label: "Shop"
+        name: "shop"
+        fields:
+          - {
+              label: "layout",
+              name: "layout",
+              default: "layouts/shop.njk",
+              widget: "hidden",
+            }
+          - { label: "Permalink", name: "permalink", widget: "string" }                 
+      # Site Settings
+  - name: "settings"
+    label: "Settings"
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+     preview: false
+    files:
+     - name: "general"
+       label: "Global Settings"
+       file: "_data/settings.json"
+       description: "Global Site Settings"
+       fields:
+         - { label: "Global Title", name: "site_title", widget: "string" }
+         - { label: "Tagline", name: "site_tagline", widget: "string" }
+         - { label: "Global Logo", name: "site_logo", widget: "image" }
+         - { label: "Favicon", name: "site_favicon", widget: "image" }
+         - { label: "Social Image", name: "social_image", widget: "image" }
+         - { label: "noindex", name: "site_noindex", widget: "boolean", default: false, required: false  }

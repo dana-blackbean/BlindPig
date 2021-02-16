@@ -1,0 +1,96 @@
+---
+layout: layouts/base.njk
+section: home
+---
+<section class="preview">
+  <div class="wrapper">
+    <div class="info-container">
+      <div class="info">
+        <h2>
+          {{ preview_title }}
+        </h2>
+        <p>{{preview_text}}</p>
+      </div>
+    </div>
+  </div>
+  <div id="about" class="purple">
+      <div class="wrapper">
+    <img class="hero-triangles" src="{{hero_image}}" alt="">
+    </div>
+    <div class="icon"></div>
+    <div class="wrapper">
+      <div class="purple-about">
+        <img class="logo-section" src="/static/img/marijuana-icon.png">
+        <h2>{{purple_title}}</h2>
+        <p>{{purple_text}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section id="faq" class="faq">
+  <div class="wrapper">
+    <div class="faq-container">
+      <h2>Have a Question? Check out our FAQ</h2>
+      <ul>
+        {%- for entry in faq %}
+        <li class="faq-list-item">
+          <p class="faq-question">
+            {{entry.question}}
+          </p>
+          <p class="faq-answer">
+            {{entry.answer}}
+          </p>
+        </li>
+        {%- endfor %}
+      </ul>
+      <p>Can’t find what you are looking for? <a href="#contact">Contact us </a></p>
+    </div>
+  </div>
+</section>
+<section class="learn-more">
+  <div class="icon"></div>
+  <div class="wrapper">
+    <div class="learn-more-container">
+      <h2>
+        Want to Learn More? Get in Touch!
+      </h2>
+      <p>
+      Something on your mind? We’re all ears. Enter your info below and we’ll contact you in 24 hours or less.
+      </p>
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+        <img src="/static/img/1-2triangles.png" alt="">
+        <input type="hidden" name="form-name" value="contact">
+        <div class="form-row">
+          <input placeholder="First Name" name="first_name" type="text">
+          <input placeholder="Last Name" name="last_name" type="text">
+        </div>
+        <div class="form-row">
+          <input placeholder="Email" name="email" type="text">
+          <input placeholder="Phone Number" name="phone" type="tel">
+        </div>
+         <div class="form-row">
+          <textarea id="form-message" class="form-control" name="message" data-parsley-trigger="keyup" data-parsley-maxlength="300" data-parsley-validation-threshold="10" placeholder="Message Here (300 chars max)"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+<section id="newsletter" class="mailing">
+  <div class="wrapper">
+    <img class="logo-section" src="/static/img/green-logo-triangles-newsletter.png">
+    <div class="mailing-container">
+      <h2>
+        Mountain Cannabis Co. Newsletter
+      </h2>
+      <p>
+        Never miss out on the latest updates from Mountain Cannabis Co - Join today for exclusive promotions, new product information, and local event announcements.
+      </p>
+      <form name="newsletter" method="POST" data-netlify="true" action="/thank-you" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="newsletter">
+        <input placeholder="Email Address" name="email" type="email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
