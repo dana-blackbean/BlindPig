@@ -81,22 +81,16 @@ h4 {
 }
 
 .hero {
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
     background: #fff;
 }
 
 .favorites {
-    padding-top: 6rem;
-    padding-bottom: 3rem;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
     background: #2D1611;
     text-align: center;
-}
-
-.contact {
-    padding-top: 6rem;
-    padding-bottom: 3rem;
-    background: #E4D8D5;
 }
 
 .favorites > .img-flourish-top {
@@ -116,6 +110,18 @@ h4 {
 
 .favorites h4 {
     padding-bottom: 0.5rem;
+}
+
+.menu {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background: #2D1611;
+}
+
+.contact {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background: #E4D8D5;
 }
 
 .btn-hero {

@@ -1,7 +1,8 @@
 ---
 layout: layouts/home.njk
 permalink: /
-preview_title: Blind Pig
+preview_title: The 
+  Blind Pig
 preview_subtitle: Our Iconic Story
 preview_text: Welcome to Mountain - Your new favourite one-stop cannabis shop.
   Inspired by the beauty and diversity of the Canadian Rockies towering through
@@ -19,7 +20,7 @@ favorites_items:
 menu_title: Our Menu
 menu_subtitle: For yourself or to share 
 menu_text: Lorem ipsum
-menu_button: See the Menu!
+menu_button: See the Menu
 contact:
   - title: Contact Us
   - text: Lorem Ipsum
