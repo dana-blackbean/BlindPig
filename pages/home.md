@@ -12,14 +12,17 @@ date: 2016-01-01T00:00:00.000Z
 hero_image: /static/img/landing-page-mnts.png
 hero_button: Our Story
 favorites_title: Fan Favourites
-favorites_subtitle: Lore ipsum dolor sit amet, consecteteur adipiscing elit, se ddiam nonummy 
+favorites_subtitle: Lore ipsum dolor sit amet, consecteteur adipiscing elit
 favorites_items: 
   - image: /static/img/photo-frame.png
   - image: /static/img/photo-frame.png
   - image: /static/img/photo-frame.png
 menu_title: Our Menu
 menu_subtitle: For yourself or to share 
-menu_text: Lorem ipsum
+menu_text: Lore ipsum dolor sit amet, consecteteur adipiscing elit, se ddiam nonummy
+    Lore ipsum dolor sit amet, consecteteur adipiscing elit, se ddiam nonummy
+    ore ipsum dolor sit amet, consecteteur adipiscing elit, se ddiam nonummy
+    ore ipsum dolor sit amet, consecteteur adipiscing elit, se ddiam nonummy
 menu_button: See the Menu
 contact:
   - title: Contact Us
