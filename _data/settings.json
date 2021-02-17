@@ -1,8 +1,8 @@
 {
   "site_title": "The Blind Pig",
-  "site_tagline": "Welcome to Mountain - Your new favourite one-stop cannabis shop. Inspired by the beauty and diversity of the Canadian Rockies towering through the East Kootenays - Mountain Cannabis Co is stoked to serve & supply our great neighbours here in Cranbrook.",
-  "site_logo": "/static/img/mountaincannabis-logo.png",
-  "social_image": "/static/img/mountaincannabis-social.png",
+  "site_tagline": "This needs to be changed in settings.json",
+  "site_logo": "/static/img/logo.png",
+  "social_image": "/static/img/logo.png",
   "site_noindex": true,
   "site_favicon": "/static/img/favicon.png"
 }
