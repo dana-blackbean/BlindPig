@@ -281,11 +281,13 @@ header button {
     color: #CCA025;
     font-size: 1.25em;
     transition: ease-in-out .25s;
-    padding: 1rem;
+    padding: 0.35rem;
+    opacity: 1;
 }
 
 .footer-social:hover {
     color: #fff;
+    opacity: 0.75;
 }
 
 .link-animation {
