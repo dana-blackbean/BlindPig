@@ -43,7 +43,7 @@ collections:
               allow_add: true,
               fields:
                 [
-                  { label: "Image", name: "image", widget: "string" },
+                  { label: "Image", name: "image", widget: "image" },
                 ],
             }
           - { label: "Menu title", name: "menu_title", widget: "text" }
