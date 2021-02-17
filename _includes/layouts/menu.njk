@@ -2,8 +2,8 @@
 layout: layouts/base.njk
 section: menu
 ---
-<div class="bg-medium">
-    {%- for menu in menu_items -%}
+{%- for menu in menu_items -%}
+    <div class="{%- if menu.category == 'Wines' -%}bg-dark{%- else -%}bg-medium{%- endif -%}">
         <div class="container mx-auto py-5">
             <div class="flex justify-center">
                 <div class="w-16 my-auto">
@@ -35,5 +35,5 @@ section: menu
                 {%- endfor -%}
             </div>
         </div>
-    {%- endfor -%}
-</div>
+    </div>
+{%- endfor -%}
