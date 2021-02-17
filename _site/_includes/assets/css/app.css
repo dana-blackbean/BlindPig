@@ -176,4 +176,37 @@ label {
 
 .footer {
     background: #2D1611;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.footer-links {
+    padding: 0.5rem;
+}
+
+.footer-links h4 {
+    color: #CCA025;
+    letter-spacing: 1px;
+    padding-bottom: 0.5rem;
+}
+
+.footer-links .item {
+    display: block;
+    color: #fff;
+    padding-bottom: 0.25rem;
+}
+
+.footer-social {
+    color: #CCA025;
+    font-size: 1.25em;
+    transition: ease-in-out .25s;
+    padding: 1rem;
+}
+
+.footer-social:hover {
+    color: #fff;
+}
+
+.link-animation {
+    transition: ease-in-out .25s;
 }
