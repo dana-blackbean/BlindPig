@@ -127,12 +127,60 @@ header button {
 }
 
 .hero {
+    position: relative;
     padding-top: 7rem;
     padding-bottom: 7rem;
     background: #fff;
 }
 
+.hero-blindpig-top {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url('/static/img/blind-pig.png');
+    height: 38rem;
+    width: 46rem;
+    background-size: 800px 800px;
+    background-repeat: no-repeat;
+}
+
+.hero-blindpig-bottom {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url('/static/img/blind-pig_white.png');
+    background-position: 0% 320%;
+    height: 38rem;
+    width: 46rem;
+    background-size: 800px 800px;
+    background-repeat: no-repeat;
+}
+
+.hero-pigsfly-top {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url('/static/img/when-pigs-fly_White.png');
+    height: 12rem;
+    width: 32rem;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+}
+
+.hero-pigsfly-bottom {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url('/static/img/when-pigs-fly.png');
+    height: 16rem;
+    width: 32rem;
+    background-position: 0% 160%;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+}
+
 .favorites {
+    position: relative;
     padding-top: 7rem;
     padding-bottom: 7rem;
     background: #2D1611;
@@ -159,12 +207,13 @@ header button {
 }
 
 .menu {
-    /* padding-top: 7rem; */
+    position: relative;
     padding-bottom: 7rem;
     background: #2D1611;
 }
 
 .contact {
+    position: relative;
     padding-top: 7rem;
     padding-bottom: 7rem;
     background: #E4D8D5;
