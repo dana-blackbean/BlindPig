@@ -81,20 +81,24 @@ collections:
             widget: "list",
             allow_add: true,
             fields:
-              - { label: "Category name", name: "category", widget: "text" }
-              - {
-                  label: "Category items",
-                  name: "items",
-                  widget: "list",
-                  allow_add: true,
-                  fields:
-                    - { label: "Item name", name: "name", widget: "text" }
-                    - { label: "Item description", name: "description", widget: "text" }
-                    - { label: "Size name #1", name: "price_name_one", widget: "text" }
-                    - { label: "Size price #1", name: "price_value_one", widget: "text" }
-                    - { label: "Size name #2", name: "price_name_two", widget: "text" }
-                    - { label: "Size price #2", name: "price_value_two", widget: "text" }
+              [
+                { label: "Category name", name: "category", widget: "text" },
+                {
+                    label: "Category items",
+                    name: "items",
+                    widget: "list",
+                    allow_add: true,
+                    fields:
+                      [
+                        { label: "Item name", name: "name", widget: "text" },
+                        { label: "Item description", name: "description", widget: "text" },
+                        { label: "Size name #1", name: "price_name_one", widget: "text" },
+                        { label: "Size price #1", name: "price_value_one", widget: "text" },
+                        { label: "Size name #2", name: "price_name_two", widget: "text" },
+                        { label: "Size price #2", name: "price_value_two", widget: "text" }
+                      ]
                 }
+              ]
           }
       - file: "pages/shop.md"
         label: "Shop"
