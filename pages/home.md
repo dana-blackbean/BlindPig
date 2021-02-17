@@ -9,7 +9,7 @@ preview_text: Welcome to Mountain - Your new favourite one-stop cannabis shop.
   the East Kootenays - Mountain Cannabis Co is stoked to serve & supply our
   great neighbours here in Cranbrook.
 date: 2016-01-01T00:00:00.000Z
-hero_image: /static/img/landing-page-mnts.png
+hero_image: /static/img/blind-pig.png
 hero_button: Our Story
 favorites_title: Fan Favourites
 favorites_subtitle: Lore ipsum dolor sit amet, consecteteur adipiscing elit
