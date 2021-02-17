@@ -82,8 +82,7 @@ collections:
               allow_add: true,
               fields:
                 [
-                  { category: "Category name", name: "category", widget: "text" },
-                  { items: "Category items", name: "items", widget: "text" }
+                  { category: "Category name", name: "category", widget: "text" }
                 ],
             }
       - file: "pages/shop.md"
