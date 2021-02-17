@@ -19,24 +19,19 @@ function fadeInPage() {
 }
 
 $(document).ready(function () {
-  $('.faq-list-item').click(function () {
-    $(this.lastChild).slideToggle(200)
-  })
+  /*
   $(".btn-nav").click(openNav)
   $(".overlay").click(closeNav)
   $(".mobile-sidenav a").click(closeNav)
   const rootElement = document.documentElement;
-
+   */
 });
 
 
-function openNav() {
-  $(".overlay").css('width', "100vw");
-  $(".mobile-sidenav").css('width', '250px');
-}
-
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-  $(".mobile-sidenav").css('width', '0');
-  $(".overlay").css('width', "0");
+function toggleNav() {
+  if ($(".mobile-nav").css('width') !== "0px") {
+    $(".mobile-nav").css('width', '0');
+  } else {
+    $(".mobile-nav").css('width', '250px');
+  }
 }

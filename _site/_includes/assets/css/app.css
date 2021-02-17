@@ -84,15 +84,30 @@ label {
 }
 
 .mobile-nav {
-    width: 250px;
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 1000;
     background: #2D1611;
+}
+
+.mobile-nav div {
+
 }
 
 .mobile-nav a {
     display: block;
-    padding: 0.25rem 0.75rem;
+    padding: 0.5rem 0.75rem;
     text-transform: uppercase;
     color: #fff;
+}
+
+.mobile-nav a:hover {
+    background: #E4D8D5;
+    transition: ease-in-out duration .25s;
 }
 
 .hero-img-black {
