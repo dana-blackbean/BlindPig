@@ -81,6 +81,12 @@ label {
     font-family: prohibition, sans-serif;
     font-weight: 400;
     font-style: italic;
+
+    transition: ease-in-out .25s;
+}
+
+.nav-link:hover {
+    color: #CCA025;
 }
 
 .mobile-nav {
@@ -288,6 +294,11 @@ header button {
 .footer-social:hover {
     color: #fff;
     opacity: 0.75;
+}
+
+.price-label {
+    border-color: #CCA025;
+    color: #CCA025;
 }
 
 .link-animation {
