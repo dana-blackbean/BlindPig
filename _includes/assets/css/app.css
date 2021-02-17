@@ -91,11 +91,7 @@ label {
     bottom: 0;
     height: 100vh;
     z-index: 1000;
-    background: #2D1611;
-}
-
-.mobile-nav div {
-
+    background: #000;
 }
 
 .mobile-nav a {
@@ -103,11 +99,16 @@ label {
     padding: 0.5rem 0.75rem;
     text-transform: uppercase;
     color: #fff;
+    transition: ease-in-out duration .25s;
 }
 
 .mobile-nav a:hover {
-    background: #E4D8D5;
-    transition: ease-in-out duration .25s;
+    background: #222;
+}
+
+header button {
+    color: #fff;
+    font-size: 3em;
 }
 
 .hero-img-black {
