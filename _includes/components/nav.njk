@@ -1,29 +1,3 @@
 <nav class="container mx-auto hidden md:block">
-    <div class="flex justify-center">
-        <div class="w-64 text-center my-auto">
-            <a class="nav-link" href="/./#story">
-                Our Story
-            </a>
-        </div>
-        <div class="w-64 text-center my-auto">
-            <a class="nav-link" href="/./#story">
-                Good Eats
-            </a>
-        </div>
-        <div class="w-32 py-3 text-center">
-            <a class="nav-link" href="{{ '/' | url }}">
-                <img class="w-full h-auto" src="{{ metadata.logo }}" alt="blind pig logo">
-            </a>
-        </div>
-        <div class="w-64 text-center my-auto">
-            <a class="nav-link" href="/./#story">
-                Contact Us
-            </a>
-        </div>
-        <div class="w-64 text-center my-auto">
-            <a class="nav-link" href="/./#story">
-                Get Merch
-            </a>
-        </div>
-    </div>
+    {% include "components/navlinks.njk" %}
 </nav>

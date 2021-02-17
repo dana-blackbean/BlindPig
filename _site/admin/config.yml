@@ -63,7 +63,29 @@ collections:
               widget: "hidden",
             }
           - { label: "Permalink", name: "permalink", widget: "string" }
-          - { label: "Page Content", name: "subpage_content", widget: "markdown" }  
+          - { label: "Page Content", name: "subpage_content", widget: "markdown" }
+      - file: "pages/menu.md"
+          label: "Menu page"
+          name: "menu"
+          fields:
+            - {
+              label: "layout",
+              name: "layout",
+              default: "layouts/menu.njk",
+              widget: "hidden",
+            }
+            - { label: "Permalink", name: "permalink", widget: "text" }
+            - {
+              label: "Menu items",
+              name: "menu_items",
+              widget: "list",
+              allow_add: true,
+              fields:
+                [
+                  { category: "Category name", name: "category", widget: "text" },
+                  { items: "Category items", name: "items", widget: "text" }
+                ],
+            }
       - file: "pages/shop.md"
         label: "Shop"
         name: "shop"
