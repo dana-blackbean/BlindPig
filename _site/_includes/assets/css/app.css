@@ -331,6 +331,7 @@ header button {
 }
 
 .menu-navigation {
+    z-index: 100;
     position: absolute;
     top: 0;
     left: 0;
@@ -340,7 +341,7 @@ header button {
     border: 1px solid #ddd;
 }
 
-.menu-navigation .item, .menu-navigation .active {
+.menu-navigation .item {
     display: block;
     font-family: prohibition, sans-serif;
     font-weight: 400;
@@ -356,7 +357,7 @@ header button {
     background: #cca025;
 }
 
-.menu-navigation .item:hover {
+.menu-navigation .not-active:hover {
     background: #ddd;
 }
 

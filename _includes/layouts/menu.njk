@@ -10,18 +10,20 @@ section: menu
 <div class="menu-content">
     <div class="w-full md:w-3/5 xl:w-2/5 mx-auto menu-navigation">
         <div class="flex flex-wrap">
-            <a href="/" class="active w-full lg:w-1/3">
-                Drinks
-            </a>
-            <a href="/" class="item w-full lg:w-1/3">
-                Food
-            </a>
-            <a href="/" class="item w-full lg:w-1/3">
-                Specials
-            </a>
+            {%- for item in menus -%}
+                {%- if item.menu_name == 'Drinks' -%}
+                    <a href="/" class="item active w-full md:w-1/3">
+                        {{ item.menu_name }}
+                    </a>
+                {%- else -%}
+                    <a href="/" class="item not-active w-full md:w-1/3">
+                        {{ item.menu_name }}
+                    </a>
+                {%- endif -%}
+            {%- endfor -%}
         </div>
     </div>
-    {%- for menu in menu_items -%}
+    {%- for menu in menus[0].menu_items -%}
         <div class="{%- if menu.category == 'Wines' -%}bg-medium{%- else -%}bg-white{%- endif -%}">
             <div class="max-w-screen-2xl px-3 mx-auto py-8 md:py-16">
                 <div class="flex justify-center">
