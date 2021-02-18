@@ -34,6 +34,7 @@ menus:
             price_size_one: NA
             price_value_one: 8
       - category: Wines
+        background: true
         items:
           - name: Merlot Wine
             description: crisp, clean and delicious

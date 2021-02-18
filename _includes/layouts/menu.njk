@@ -12,11 +12,11 @@ section: menu
         <div class="flex flex-wrap">
             {%- for item in menus -%}
                 {%- if loop.index0 == 0 -%}
-                    <button id="nav_{{ loop.index0 }}" type="button" onclick="showMenu({{ loop.index0 }})" class="item active w-full md:w-1/3">
+                    <button id="nav_{{ loop.index0 }}" type="button" onclick="showMenu({{ loop.index0 }})" class="item active w-full md:w-1/{%- if loop.length >= 2 and loop.length <= 6 -%}{{ loop.length }}{%- else -%}3{%- endif -%}">
                         {{ item.menu_name }}
                     </button>
                 {%- else -%}
-                    <button id="nav_{{ loop.index0 }}" type="button" onclick="showMenu({{ loop.index0 }})" class="item not-active w-full md:w-1/3">
+                    <button id="nav_{{ loop.index0 }}" type="button" onclick="showMenu({{ loop.index0 }})" class="item not-active w-full md:w-1/{%- if loop.length >= 2 and loop.length <= 6 -%}{{ loop.length }}{%- else -%}3{%- endif -%}">
                         {{ item.menu_name }}
                     </button>
                 {%- endif -%}
@@ -26,7 +26,7 @@ section: menu
     {%- for key in menus -%}
         <div id="menu_{{ loop.index0 }}" class="{%- if loop.index0 != 0 -%}hidden{%- endif -%}">
             {%- for menu in menus[loop.index0].menu_items -%}
-                <div class="{%- if menu.category == 'Wines' -%}bg-medium{%- else -%}bg-white{%- endif -%}">
+                <div class="{%- if menu.background == 'true' -%}bg-medium{%- else -%}bg-white{%- endif -%}">
                     <div class="max-w-screen-2xl px-3 mx-auto py-8 md:py-16">
                         <div class="flex justify-center">
                             <div class="w-16 my-auto">

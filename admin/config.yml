@@ -75,6 +75,7 @@ collections:
               name: "menus",
               widget: "list",
               allow_add: true,
+              max: 10,
               fields:
                 [
                   { label: "Menu name", name: "menu_name", widget: "text" },
