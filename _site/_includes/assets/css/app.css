@@ -317,13 +317,54 @@ header button {
 .menu-header {
     background: #000;
     color: #fff;
-    padding: 5rem 0;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    text-align: center;
 }
+
+.menu-header h2 {
+    letter-spacing: 6px;
+}
+
+.menu-content {
+    position: relative;
+}
+
+.menu-navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: -15px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+}
+
+.menu-navigation .item, .menu-navigation .active {
+    display: block;
+    font-family: prohibition, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    transition: ease-in-out .25s;
+    padding: 0.45rem 0;
+}
+
+.menu-navigation .active, .menu-navigation .active:hover {
+    background: #cca025;
+}
+
+.menu-navigation .item:hover {
+    background: #ddd;
+}
+
 
 .menu-pigsfly-top {
     position: absolute;
     left: 0;
-    top: 42px;
+    top: 57px;
     background-image: url('/static/img/when-pigs-fly-inverted_White.png');
     height: 23rem;
     width: 32rem;
@@ -334,9 +375,10 @@ header button {
 }
 
 .menu-pigsfly-bottom {
+    z-index: 50;
     position: absolute;
     left: 0;
-    top: 400px;
+    top: 415px;
     background-image: url('/static/img/when-pigs-fly-inverted.png');
     height: 9rem;
     width: 32rem;
