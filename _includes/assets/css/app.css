@@ -353,14 +353,17 @@ header button {
     padding: 0.45rem 0;
 }
 
-.menu-navigation .active, .menu-navigation .active:hover {
+.menu-navigation .active,
+.menu-navigation .active:hover,
+.menu-navigation .active:focus {
     background: #cca025;
+    outline: none;
 }
 
-.menu-navigation .not-active:hover {
+.menu-navigation .not-active:hover, .menu-navigation .not-active:focus {
     background: #ddd;
+    outline: none;
 }
-
 
 .menu-pigsfly-top {
     position: absolute;
@@ -387,6 +390,25 @@ header button {
     background-size: 500px 500px;
     background-repeat: no-repeat;
     opacity: 0.35;
+}
+
+.about-section {
+    background: #000;
+    color: #fff;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+}
+
+.about-section h2 {
+    font-size: 1.2em;
+    letter-spacing: 6px;
+}
+
+.about-section h3 {
+    color: #CCA025;
+    letter-spacing: 4px;
+    padding-top: 0.25rem;
+    padding-bottom: 0.4rem;
 }
 
 #fader {
