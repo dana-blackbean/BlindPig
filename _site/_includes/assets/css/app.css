@@ -301,8 +301,23 @@ header button {
     color: #CCA025;
 }
 
+.price-value {
+    font-size: 1.1em;
+    color: #CCA025;
+}
+
+.price-border {
+    border-top: 1px solid #CCA025;
+}
+
 .link-animation {
     transition: ease-in-out .25s;
+}
+
+.menu-header {
+    background: #000;
+    color: #fff;
+    padding: 0 5rem;
 }
 
 
