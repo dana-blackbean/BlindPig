@@ -1,3 +1,4 @@
+---
 layout: layouts/about.njk
 permalink: /about/
 title: About
@@ -21,3 +22,4 @@ team_members:
   - name: John Smith
     role: Owner
     picture: /static/img/photo-frame.png
+---
