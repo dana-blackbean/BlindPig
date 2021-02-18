@@ -105,6 +105,31 @@ collections:
                   }
                 ]
               }
+      - file: "pages/about.md"
+        label: "About"
+        name: "about"
+        fields:
+          - { label: "Headline title", name: "headline_title", widget: "text" }
+          - { label: "Headline subtitle", name: "headline_subtitle", widget: "text" }
+          - { label: "Headline content", name: "headline_content", widget: "text" }
+          - { label: "Headline image", name: "headline_image", widget: "image" }
+          - { label: "Why title", name: "why_title", widget: "text" }
+          - { label: "Why subtitle", name: "why_subtitle", widget: "text" }
+          - { label: "Why content", name: "why_content", widget: "text" }
+          - { label: "Why button", name: "why_button", widget: "text" }
+          - { label: "Team title", name: "team_title", widget: "text" }
+          - {
+              label: "Team Members",
+              name: "team_members",
+              widget: "list",
+              allow_add: true,
+              fields:
+                [
+                  { label: "Name", name: "name", widget: "text" },
+                  { label: "Role", name: "role", widget: "text" },
+                  { label: "Picture", name: "picture", widget: "image" }
+                ]
+          }
       - file: "pages/shop.md"
         label: "Shop"
         name: "shop"
