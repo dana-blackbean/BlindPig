@@ -399,17 +399,44 @@ header button {
     padding-bottom: 7rem;
 }
 
-.about-section h2 {
-    font-size: 1.2em;
+.about-section h2, .why-section h2 {
+    font-size: 3em;
     letter-spacing: 6px;
 }
 
-.about-section h3 {
+.about-section h3, .why-section h3 {
     color: #CCA025;
     letter-spacing: 4px;
     padding-top: 0.25rem;
     padding-bottom: 0.4rem;
 }
+
+.why-section {
+    position: relative;
+    background: #fff;
+    color: #000;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.why-section > .image-wrapper {
+    padding: 3rem 0;
+}
+
+.why-section .when-pigs-fly {
+    z-index: 50;
+    position: absolute;
+    top: 25px;
+    right: -140px;
+    background-image: url('/static/img/when-pigs-fly.png');
+    height: 32rem;
+    width: 32rem;
+    background-position: bottom;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+}
+
 
 #fader {
     position: fixed;
