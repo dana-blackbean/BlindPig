@@ -1,0 +1,476 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: open-sans,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+main {
+    overflow: hidden;
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1150px;
+    }
+}
+
+p {
+    line-height: 1.9;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 60px;
+    font-family: rosella-hatched,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h2 {
+    font-family: rosella-hatched,sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: merriweather, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+h4, label {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: merriweather, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    padding: 0.2rem;
+    border: 1px solid #2D1611;
+    color: #2D1611;
+    background: transparent;
+    margin-bottom: 1rem;
+}
+
+label {
+    padding-bottom: 0.2rem;
+}
+
+.bg-dark { background: #2D1611; }
+.bg-medium { background: #E4D8D5; }
+.text-dark { color: #2D1611; }
+.text-medium { color: #E4D8D5; }
+
+.nav-link {
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #fff;
+
+    font-family: prohibition, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+
+    transition: ease-in-out .25s;
+}
+
+.nav-link:hover {
+    color: #CCA025;
+}
+
+.mobile-nav {
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 1000;
+    background: #000;
+}
+
+.mobile-nav a {
+    display: block;
+    padding: 0.5rem 0.75rem;
+    text-transform: uppercase;
+    color: #fff;
+    transition: ease-in-out duration .25s;
+}
+
+.mobile-nav a:hover {
+    background: #222;
+}
+
+header button {
+    color: #fff;
+    font-size: 3em;
+}
+
+.hero-img-black {
+    position: absolute;
+    right: 0;
+    height: 250px;
+    width: 250px;
+    background-size: contain;
+    background: url('/static/img/blind-pig.png');
+}
+
+.hero-subtitle {
+    color: #CCA025;
+    padding-top: 0.25rem;
+    padding-bottom: 0.4rem;
+}
+
+.hero {
+    position: relative;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background: #fff;
+}
+
+.hero-blindpig-top {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url('/static/img/blind-pig.png');
+    height: 38rem;
+    width: 46rem;
+    background-size: 800px 800px;
+    background-repeat: no-repeat;
+}
+
+.hero-blindpig-bottom {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url('/static/img/blind-pig_white.png');
+    background-position: 0% 320%;
+    height: 38rem;
+    width: 46rem;
+    background-size: 800px 800px;
+    background-repeat: no-repeat;
+}
+
+.hero-pigsfly-top {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url('/static/img/when-pigs-fly_White.png');
+    height: 12rem;
+    width: 32rem;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+}
+
+.hero-pigsfly-bottom {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url('/static/img/when-pigs-fly.png');
+    height: 19rem;
+    width: 32rem;
+    background-position: 0% 100%;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+}
+
+.favorites {
+    position: relative;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background: #2D1611;
+    text-align: center;
+}
+
+.favorites > .img-flourish-top {
+    background: url('/static/img/flourish_top.png');
+    width: 100%;
+    height: 100%;
+}
+
+.favorites > .img-flourish-bottom {
+    background: url('/static/img/flourish_bottom.png');
+}
+
+.favorites .content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.favorites h4 {
+    padding-bottom: 0.5rem;
+}
+
+.menu {
+    position: relative;
+    padding-bottom: 7rem;
+    background: #2D1611;
+}
+
+.contact {
+    position: relative;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background: #E4D8D5;
+}
+
+.contact p {
+    padding-bottom: 2rem;
+}
+
+.btn-invert {
+    background: #CCA025;
+    border: 2px solid #CCA025;
+    color: #2D1611;
+}
+
+.btn-invert:hover {
+    background: transparent;
+    border-color: #CCA025;
+}
+
+.btn-default {
+    background: transparent;
+    border-color: #CCA025;
+    border: 2px solid #CCA025;
+}
+
+.btn-default:hover {
+    background: #CCA025;
+    color: #2D1611;
+}
+
+.btn {
+    font-family: prohibition, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    transition: ease-in-out .25s;
+}
+
+.footer {
+    background: #2D1611;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.footer-links {
+    padding: 0.5rem;
+}
+
+.footer-links h4 {
+    color: #CCA025;
+    letter-spacing: 1px;
+    padding-bottom: 0.5rem;
+}
+
+.footer-links .item {
+    display: block;
+    color: #fff;
+    padding-bottom: 0.25rem;
+}
+
+.footer-social {
+    color: #CCA025;
+    font-size: 1.25em;
+    transition: ease-in-out .25s;
+    padding: 0.35rem;
+    opacity: 1;
+}
+
+.footer-social:hover {
+    color: #fff;
+    opacity: 0.75;
+}
+
+.price-label {
+    border-color: #CCA025;
+    color: #CCA025;
+}
+
+.price-value {
+    font-size: 1.1em;
+    color: #CCA025;
+}
+
+.price-border {
+    border-top: 1px solid #CCA025;
+}
+
+.link-animation {
+    transition: ease-in-out .25s;
+}
+
+.menu-header {
+    background: #000;
+    color: #fff;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+}
+
+.menu-header h2 {
+    letter-spacing: 6px;
+}
+
+.menu-content {
+    position: relative;
+}
+
+.menu-navigation {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: -15px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+}
+
+.menu-navigation .item {
+    display: block;
+    font-family: prohibition, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    transition: ease-in-out .25s;
+    padding: 0.45rem 0;
+}
+
+.menu-navigation .active,
+.menu-navigation .active:hover,
+.menu-navigation .active:focus {
+    background: #cca025;
+    outline: none;
+}
+
+.menu-navigation .not-active:hover, .menu-navigation .not-active:focus {
+    background: #ddd;
+    outline: none;
+}
+
+.menu-pigsfly-top {
+    position: absolute;
+    left: 0;
+    top: 57px;
+    background-image: url('/static/img/when-pigs-fly-inverted_White.png');
+    height: 23rem;
+    width: 32rem;
+    background-position: top;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+}
+
+.menu-pigsfly-bottom {
+    z-index: 50;
+    position: absolute;
+    left: 0;
+    top: 415px;
+    background-image: url('/static/img/when-pigs-fly-inverted.png');
+    height: 9rem;
+    width: 32rem;
+    background-position: bottom;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+}
+
+.about-section {
+    background: #000;
+    color: #fff;
+    padding-top: 5rem;
+    padding-bottom: 7rem;
+}
+
+.about-section h2, .why-section h2 {
+    font-size: 3em;
+    letter-spacing: 6px;
+}
+
+.about-section h3, .why-section h3 {
+    color: #CCA025;
+    letter-spacing: 4px;
+    padding-top: 0.25rem;
+    padding-bottom: 0.4rem;
+}
+
+.why-section {
+    position: relative;
+    background: #fff;
+    color: #000;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.why-section > .image-wrapper {
+    padding: 3rem 0;
+}
+
+.why-section .when-pigs-fly {
+    z-index: 50;
+    position: absolute;
+    top: 25px;
+    right: -140px;
+    background-image: url('/static/img/when-pigs-fly.png');
+    height: 32rem;
+    width: 32rem;
+    background-position: bottom;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+}
+
+
+#fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    pointer-events: none;
+    background: white;
+    animation-duration: 700ms;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes fade-out {
+    from { opacity: 1 }
+    to { opacity: 0 }
+}
+
+@keyframes fade-in {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+#fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+}
+
+#fader.fade-in {
+    opacity: 1;
+    animation-name: fade-in;
+}

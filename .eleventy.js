@@ -90,6 +90,16 @@ module.exports = function(eleventyConfig) {
     .use(markdownItAnchor, opts)
   );
 
+  // Tailwind
+  const pluginTailwindCSS = require("eleventy-plugin-tailwindcss");
+  eleventyConfig.addPlugin(pluginTailwindCSS, {
+    src: "_includes/assets/css/tailwind.css",
+    dest: "assets/css",
+    keepFolderStructure: false,
+    watchEleventyWatchTargets: true,
+    minify: false
+  });
+
   return {
     templateFormats: ["md", "njk", "html", "liquid"],
 
