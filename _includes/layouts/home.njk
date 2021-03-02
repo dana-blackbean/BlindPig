@@ -60,44 +60,4 @@ section: home
     <div class="hidden lg:block hero-pigsfly-top"></div>
 </section>
 
-<section class="contact">
-    <div class="max-w-screen-md px-2 mx-auto">
-        <div class="text-center">
-            <h2>{{ contact_title }}</h2>
-            <p>{{ contact_text }}</p>
-        </div>
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
-            <input type="hidden" name="form-name" value="contact">
-            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4">
-                <div>
-                    <label for="firstName">First Name</label>
-                    <input id="firstName" type="text" required />
-                </div>
-
-                <div>
-                    <label for="lastName">Last Name</label>
-                    <input id="lastName" type="text" required />
-                </div>
-
-                <div>
-                    <label for="emailAddress">Email Address</label>
-                    <input id="emailAddress" type="text" required />
-                </div>
-
-                <div>
-                    <label for="phoneNumber">Phone Number</label>
-                    <input id="phoneNumber" type="tel" required />
-                </div>
-
-                <div class="col-span-full">
-                    <label for="messageContent">Message</label>
-                    <textarea id="messageContent" type="text" rows="5"></textarea>
-                </div>
-            </div>
-            <div class="mt-8">
-                <button type="submit" class="btn btn-invert">{{ contact_button }}</button>
-            </div>
-        </form>
-    </div>
-    <div class="hidden lg:block hero-pigsfly-bottom"></div>
-</section>
+{% include '/components/contact' %}
