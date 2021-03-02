@@ -22,7 +22,7 @@ function updateElementPadding() {
   const getElement = document.querySelector('main');
   const getMobileHeader = document.getElementById('mobileNav');
   if (getElement && getMobileHeader && getMobileHeader.offsetHeight !== 0) {
-    getElement.style.paddingTop = '30px';
+    getElement.style.paddingTop = '45px';
   }
 }
 
