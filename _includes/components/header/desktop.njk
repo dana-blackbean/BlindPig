@@ -1,12 +1,12 @@
 <nav class="container mx-auto hidden md:block">
     <div class="flex justify-center">
         <div class="w-64 text-center my-auto">
-            <a class="nav-link" href="/./about">
+            <a class="nav-link {% if section == 'about' %}active{% endif %}" href="/./about">
                 Our Story
             </a>
         </div>
         <div class="w-64 text-center my-auto">
-            <a class="nav-link" href="/./menu">
+            <a class="nav-link {% if section == 'menu' %}active{% endif %}" href="/./menu">
                 Menu
             </a>
         </div>
@@ -16,12 +16,12 @@
             </a>
         </div>
         <div class="w-64 text-center my-auto">
-            <a class="nav-link" href="/./contact">
+            <a class="nav-link {% if section == 'contact' %}active{% endif %}" href="/./contact">
                 Contact Us
             </a>
         </div>
         <div class="w-64 text-center my-auto">
-            <a class="nav-link" href="/./store">
+            <a class="nav-link {% if section == 'store' %}active{% endif %}" href="/./store">
                 Get Merch
             </a>
         </div>

@@ -99,7 +99,7 @@ header {
     transition: ease-in-out .25s;
 }
 
-.nav-link:hover {
+.nav-link:hover, .nav-link .active {
     color: #CCA025;
 }
 
@@ -122,7 +122,7 @@ header {
     transition: ease-in-out duration .25s;
 }
 
-.mobile-nav a:hover {
+.mobile-nav a:hover, .mobile-nav .active {
     background: #222;
 }
 

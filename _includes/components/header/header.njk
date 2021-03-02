@@ -1,0 +1,16 @@
+<header class="hidden md:block">
+    {% include "components/header/desktop.njk" %}
+</header>
+<header class="bg-black fixed block w-full" style="z-index: 100;">
+    <div class="flex md:hidden px-3">
+        <div class="w-10 p-1 mr-auto">
+            <a href="/">
+                <img src="{{ metadata.logo }}" alt="blind pig" />
+            </a>
+        </div>
+        <div class="w-auto my-auto">
+            <button type="button" onClick="toggleNav()">=</button>
+        </div>
+    </div>
+    {% include "components/header/mobile.njk" %}
+</header>

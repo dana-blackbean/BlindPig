@@ -1,0 +1,9 @@
+<div class="mobile-nav">
+  <div class="text-right w-16 pr-3 ml-auto text-white">
+    <button type="button" onClick="toggleNav()">=</button>
+  </div>
+  <a class="{% if section == 'about' %}active{% endif %}" href="/./about">Our Story</a>
+  <a class="{% if section == 'menu' %}active{% endif %}" href="/./menu">Menu</a>
+  <a class="{% if section == 'contact' %}active{% endif %}" href="/./contact">Contact Us</a>
+  <a class="{% if section == 'store' %}active{% endif %}" href="/./store">Get Merch</a>
+</div>

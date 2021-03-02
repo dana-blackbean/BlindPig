@@ -53,7 +53,7 @@ section: about
                 <ul class="splide__list">
                     {% for item in team_members %}
                     <li class="splide__slide px-5">
-                        <img src="/static/img/photo-frame.png" alt="frame" />
+                        <img class="clip-frame" src="{{ item.picture }}" alt="frame" />
                         <div class="info">
                             <h3>{{ item.name }}</h3>
                             <p>{{ item.role }}</p>
