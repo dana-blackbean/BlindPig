@@ -80,6 +80,10 @@ label {
 .text-dark { color: #2D1611; }
 .text-medium { color: #E4D8D5; }
 
+header {
+    background: #1D120A;
+}
+
 .nav-link {
     font-size: 20px;
     letter-spacing: 5px;
@@ -324,7 +328,7 @@ header button {
 }
 
 .menu-header {
-    background: #000;
+    background: #1D120A; /* old #000 */
     color: #fff;
     padding-top: 5rem;
     padding-bottom: 6rem;
