@@ -19,10 +19,10 @@ function fadeInPage() {
 }
 
 function updateElementPadding() {
-  const getElement = document.querySelector('main div');
+  const getElement = document.querySelector('main');
   const getMobileHeader = document.getElementById('mobileNav');
-  if (getElement && getMobileHeader) {
-    getElement.style.marginTop = '20px';
+  if (getElement && getMobileHeader && getMobileHeader.offsetHeight !== 0) {
+    getElement.style.paddingTop = '30px';
   }
 }
 

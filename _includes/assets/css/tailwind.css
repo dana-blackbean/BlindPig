@@ -99,7 +99,7 @@ header {
     transition: ease-in-out .25s;
 }
 
-.nav-link:hover, .nav-link .active {
+.nav-link:hover, .nav-active {
     color: #CCA025;
 }
 

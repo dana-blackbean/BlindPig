@@ -1,27 +1,27 @@
 <nav class="container mx-auto hidden md:block">
     <div class="flex justify-center">
         <div class="w-64 text-center my-auto">
-            <a class="nav-link {% if section == 'about' %}active{% endif %}" href="/./about">
+            <a class="nav-link {% if section == 'about' %}nav-active{% endif %}" href="/./about">
                 Our Story
             </a>
         </div>
         <div class="w-64 text-center my-auto">
-            <a class="nav-link {% if section == 'menu' %}active{% endif %}" href="/./menu">
+            <a class="nav-link {% if section == 'menu' %}nav-active{% endif %}" href="/./menu">
                 Menu
             </a>
         </div>
-        <div class="w-24 py-3 text-center">
+        <div class="w-64 py-3 text-center">
             <a class="nav-link" href="{{ '/' | url }}">
-                <img class="w-full h-auto" src="{{ metadata.logo }}" alt="blind pig logo">
+                <img class="block w-24 mx-auto h-auto" src="{{ metadata.logo }}" alt="blind pig logo">
             </a>
         </div>
         <div class="w-64 text-center my-auto">
-            <a class="nav-link {% if section == 'contact' %}active{% endif %}" href="/./contact">
+            <a class="nav-link {% if section == 'contact' %}nav-active{% endif %}" href="/./contact">
                 Contact Us
             </a>
         </div>
         <div class="w-64 text-center my-auto">
-            <a class="nav-link {% if section == 'store' %}active{% endif %}" href="/./store">
+            <a class="nav-link {% if section == 'store' %}nav-active{% endif %}" href="/./store">
                 Get Merch
             </a>
         </div>
