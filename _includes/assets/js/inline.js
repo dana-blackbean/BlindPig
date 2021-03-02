@@ -18,13 +18,17 @@ function fadeInPage() {
     }, 500);
 }
 
+function updateElementPadding() {
+  const getElement = document.querySelector('main div');
+  const getMobileHeader = document.getElementById('mobileNav');
+  if (getElement && getMobileHeader) {
+    getElement.style.marginTop = (getMobileHeader.offsetHeight) + 'px';
+  }
+}
+
 $(document).ready(function () {
-  /*
-  $(".btn-nav").click(openNav)
-  $(".overlay").click(closeNav)
-  $(".mobile-sidenav a").click(closeNav)
-  const rootElement = document.documentElement;
-   */
+  updateElementPadding();
+  $(window).resize(updateElementPadding());
 });
 
 
