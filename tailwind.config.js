@@ -8,7 +8,11 @@ module.exports = {
       "pages/*.md"
     ],
     options: {
-      safelist: [],
+      safelist: [
+          'md:w-1/4',
+          'md:w-1/5',
+          'md:w-1/6'
+      ],
     },
   },
   presets: [],
@@ -19,7 +23,7 @@ module.exports = {
       md: '768px',
       lg: '1024px',
       xl: '1280px',
-      '2xl': '1400px',
+      '2xl': '1420px',
     },
     colors: {
       transparent: 'transparent',
@@ -142,7 +146,15 @@ module.exports = {
       inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)',
       none: 'none',
     },
-    container: {},
+    container: {
+      padding: {
+        DEFAULT: '2rem',
+        sm: '2rem',
+        lg: '3rem',
+        xl: '3rem',
+        '2xl': '3rem',
+      },
+    },
     cursor: {
       auto: 'auto',
       default: 'default',
