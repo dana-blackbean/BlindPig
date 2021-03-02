@@ -232,6 +232,17 @@ header button {
     background: #2D1611;
 }
 
+.floating-image {
+    @apply relative z-10;
+}
+
+@media (min-width: 1280px) {
+    .floating-image {
+        margin-top: 40%;
+        @apply absolute;
+    }
+}
+
 .contact {
     position: relative;
     padding-top: 7rem;
@@ -421,36 +432,66 @@ header button {
 .about-section h3, .why-section h3 {
     color: #CCA025;
     letter-spacing: 4px;
-    padding-top: 0.25rem;
-    padding-bottom: 0.4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.8rem;
 }
 
 .why-section {
     position: relative;
     background: #fff;
     color: #000;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    @apply pb-36;
 }
 
 .why-section > .image-wrapper {
-    padding: 3rem 0;
+    padding: 9rem 0;
 }
 
 .why-section .when-pigs-fly {
     z-index: 50;
     position: absolute;
-    top: 25px;
-    right: -140px;
-    background-image: url('/static/img/when-pigs-fly.png');
-    height: 32rem;
-    width: 32rem;
+    top: -30px;
+    right: -42%;
+    background-image: url(/static/img/when-pigs-fly.png);
+    height: 100%;
+    width: 100%;
     background-position: bottom;
-    background-size: 500px 500px;
+    background-size: 700px 700px;
     background-repeat: no-repeat;
-    opacity: 0.35;
+    opacity: 0.5;
 }
 
+.team-section {
+    background: #E4D8D5;
+    @apply py-16;
+}
+
+.team-section .info {
+    @apply pt-6 text-center;
+}
+
+.team-section .info h3 {
+    @apply pb-2 uppercase;
+}
+
+.team-section .info p {
+    @apply text-sm uppercase;
+}
+
+.team-section .splide {
+    @apply pt-8;
+}
+
+.splide__arrow--prev {
+    left: -2em !important;
+}
+.splide__arrow--next {
+    right: -2em !important;
+}
+
+.splide__pagination {
+    top: 105%;
+}
 
 #fader {
     position: fixed;

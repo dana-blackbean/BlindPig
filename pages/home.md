@@ -1,5 +1,5 @@
 ---
-layout: layouts/home.njk
+layout: layouts/pages/home.njk
 permalink: /
 preview_title: The 
   Blind Pig

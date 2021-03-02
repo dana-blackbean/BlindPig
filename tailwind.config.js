@@ -23,7 +23,7 @@ module.exports = {
       md: '768px',
       lg: '1024px',
       xl: '1280px',
-      '2xl': '1420px',
+      '2xl': '1500px',
     },
     colors: {
       transparent: 'transparent',

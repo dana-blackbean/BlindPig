@@ -32,11 +32,13 @@
   <link rel="stylesheet" href="/assets/css/tailwind.css">
   {% set css %}
     {% include "assets/css/typekit.css" %}
+    {% include "assets/css/splide.min.css" %}
   {% endset %}
   <style>{{ css | cssmin | safe }}</style>
   {% set js %}
     {% include "assets/js/jquery.min.js" %}
     {% include "assets/js/inline.js" %}
+    {% include "assets/js/splide.min.js" %}
   {% endset %}
   <script>{{ js | jsmin | safe }}</script>
 <link rel="preconnect" href="https://fonts.gstatic.com">

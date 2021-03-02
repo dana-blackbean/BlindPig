@@ -1,5 +1,5 @@
 ---
-layout: layouts/about.njk
+layout: layouts/pages/about.njk
 permalink: /about/
 title: About
 headline_title: Crafted with a story

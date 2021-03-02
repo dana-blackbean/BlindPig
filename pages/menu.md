@@ -1,5 +1,5 @@
 ---
-layout: layouts/menu.njk
+layout: layouts/pages/menu.njk
 permalink: /menu/
 title: Menu
 menus:
