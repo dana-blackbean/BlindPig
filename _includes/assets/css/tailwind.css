@@ -397,7 +397,7 @@ header button {
 .menu-pigsfly-top {
     position: absolute;
     left: 0;
-    top: 57px;
+    top: 43px;
     background-image: url('/static/img/when-pigs-fly-inverted_White.png');
     height: 23rem;
     width: 32rem;
@@ -411,7 +411,7 @@ header button {
     z-index: 50;
     position: absolute;
     left: 0;
-    top: 415px;
+    top: 400px;
     background-image: url('/static/img/when-pigs-fly-inverted.png');
     height: 9rem;
     width: 32rem;
