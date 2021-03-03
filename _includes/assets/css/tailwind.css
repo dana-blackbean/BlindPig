@@ -553,6 +553,24 @@ header button {
     opacity: 0.5;
 }
 
+.subpage_content > h2 {
+    font-family: "merriweather", serif;
+    @apply pt-10 text-2xl;
+}
+
+.subpage_content > h2:first-child {
+    @apply pt-0;
+}
+
+.subpage_content {
+    @apply py-16;
+}
+
+.subpage_content p {
+    @apply pb-3;
+}
+
+
 #fader {
     position: fixed;
     top: 0;
