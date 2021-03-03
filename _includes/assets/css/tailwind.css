@@ -497,6 +497,34 @@ header button {
     top: 105%;
 }
 
+.cont-pigsfly-top {
+    position: absolute;
+    margin-left: -8%;
+    left: 0;
+    top: 35px;
+    background-image: url('/static/img/when-pigs-fly-inverted_White.png');
+    height: 8.6rem;
+    width: 32rem;
+    background-position: top;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+}
+
+.cont-pigsfly-bottom {
+    z-index: 50;
+    position: absolute;
+    margin-left: -8%;
+    left: 0;
+    background-image: url('/static/img/when-pigs-fly-inverted.png');
+    height: 23rem;
+    width: 32rem;
+    background-position: bottom;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+}
+
 #fader {
     position: fixed;
     top: 0;

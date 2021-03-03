@@ -1,5 +1,9 @@
+{% if section == 'contact' %}
+    <div class="hidden lg:block cont-pigsfly-top"></div>
+    <div class="hidden lg:block cont-pigsfly-bottom"></div>
+{% endif %}
 <section class="contact">
-    <div class="max-w-screen-md px-2 mx-auto">
+    <div class="container mx-auto">
         <div class="text-center">
             <h2>{{ contact_title }}</h2>
             <p>{{ contact_text }}</p>
