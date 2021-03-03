@@ -131,17 +131,25 @@ collections:
                   { label: "Picture", name: "picture", widget: "image" }
                 ]
           }
-      - file: "pages/shop.md"
-        label: "Shop"
-        name: "shop"
+      - file: "pages/store.md"
+        label: "Store"
+        name: "store"
         fields:
           - {
               label: "layout",
               name: "layout",
-              default: "layouts/pages/shop.njk",
+              default: "layouts/pages/store.njk",
               widget: "hidden",
             }
-          - { label: "Permalink", name: "permalink", widget: "string" }                 
+          - { label: "Permalink", name: "permalink", widget: "string" }
+          - { label: "Hero title", name: "hero_title", widget: "text" }
+          - { label: "Hero tagline", name: "hero_tagline", widget: "text" }
+          - { label: "Hero Button", name: "hero_button", widget: "text" }
+          - { label: "Hero button link", name: "hero_href", widget: "text" }
+          - { label: "Bottom title", name: "bottom_title", widget: "text" }
+          - { label: "Bottom tagline", name: "bottom_tagline", widget: "text" }
+          - { label: "Bottom button", name: "bottom_button", widget: "text" }
+          - { label: "Bottom button link", name: "bottom_href", widget: "text" }
       # Site Settings
   - name: "settings"
     label: "Settings"

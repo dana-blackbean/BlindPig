@@ -48,6 +48,7 @@ h3 {
     font-family: merriweather, serif;
     font-weight: 700;
     font-style: normal;
+    letter-spacing: 0.15em;
 }
 
 h4, label {
@@ -549,6 +550,38 @@ header button {
     width: 32rem;
     background-position: bottom right;
     background-size: 350px 350px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.hero-store {
+    background: #1D120A;
+    color: #fff;
+    @apply relative py-16;
+}
+
+.hero-store-pigsfly-top {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url('/static/img/when-pigs-fly_White.png');
+    height: 27rem;
+    width: 32rem;
+    background-position:top;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.hero-store-pigsfly-bottom {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url('/static/img/when-pigs-fly.png');
+    height: 4.5rem;
+    width: 32rem;
+    background-position: bottom;
+    background-size: 500px 500px;
     background-repeat: no-repeat;
     opacity: 0.5;
 }

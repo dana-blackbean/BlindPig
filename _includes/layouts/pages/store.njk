@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+section: store
+---
+<section class="hero-store">
+    <div class="container mx-auto">
+        <div class="w-full md:w-4/5 mr-auto">
+            <h1>{{ hero_title }}</h1>
+            <h3 class="hero-subtitle">{{ hero_tagline }}</h3>
+            <p>
+                {{ hero_text }}
+            </p>
+            <div class="mt-10">
+                <a href="{{ hero_href }}" class="btn btn-invert">{{ hero_button }}</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero-store-pigsfly-top"></div>
+</section>
+
+<section class="bg-white py-16 relative">
+    <div class="hero-store-pigsfly-bottom"></div>
+
+    <div class="container mx-auto">
+        <div class="grid grid-cols-3 gap-6">
+            <div class="bg-gray-900 h-64"></div>
+            <div class="bg-gray-900 h-64"></div>
+            <div class="bg-gray-900 h-64"></div>
+            <div class="bg-gray-900 h-64"></div>
+            <div class="bg-gray-900 h-64"></div>
+            <div class="bg-gray-900 h-64"></div>
+            <div class="bg-gray-900 h-64"></div>
+            <div class="bg-gray-900 h-64"></div>
+            <div class="bg-gray-900 h-64"></div>
+        </div>
+    </div>
+</section>
+
+<section class="pb-16">
+    <div class="container mx-auto">
+        <div class="w-full md:w-4/5 mr-auto">
+            <h1>{{ bottom_title }}</h1>
+            <h3 class="hero-subtitle">{{ bottom_tagline }}</h3>
+            <p>
+                {{ bottom_text }}
+            </p>
+            <div class="mt-10">
+                <a href="{{ bottom_href }}" class="btn btn-invert">{{ bottom_button }}</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero-store-pigsfly-top"></div>
+</section>
