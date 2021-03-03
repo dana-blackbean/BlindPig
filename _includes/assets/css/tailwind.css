@@ -253,7 +253,7 @@ header button {
 }
 
 .contact p {
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
 }
 
 .btn-invert {
@@ -528,7 +528,7 @@ header button {
 .cont-bottom-pig-top {
     position: absolute;
     right: 0;
-    bottom: 7%;
+    bottom: 1%;
     background-image: url('/static/img/blind-pig.png');
     height: 15rem;
     width: 32rem;
@@ -543,7 +543,7 @@ header button {
     z-index: 50;
     position: absolute;
     right: 0;
-    bottom: -3.5%;
+    bottom: -9.5%;
     background-image: url('/static/img/blind-pig_white.png');
     height: 7.2rem;
     width: 32rem;
