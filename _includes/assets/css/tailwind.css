@@ -532,6 +532,14 @@ header button {
     top: 105%;
 }
 
+.splide__pagination__page, .splide__pagination__page.is-active {
+    background: #000 !important;
+}
+
+.splide__arrow {
+    background: transparent !important;
+}
+
 .cont-pigsfly-top {
     position: absolute;
     margin-left: -8%;
