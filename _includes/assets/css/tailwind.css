@@ -66,11 +66,11 @@ input, textarea {
     color: #2D1611;
     background: transparent;
     margin-bottom: 1rem;
-    @apply transition ease-in-out duration-200;
+    @apply relative z-50 transition ease-in-out duration-200;
 }
 
 input:focus, textarea:focus {
-    @apply outline-none border-2;
+    @apply outline-none shadow-md;
 }
 
 label {
@@ -523,6 +523,34 @@ header button {
     background-size: 500px 500px;
     background-repeat: no-repeat;
     opacity: 0.35;
+}
+
+.cont-bottom-pig-top {
+    position: absolute;
+    right: 0;
+    bottom: 7%;
+    background-image: url('/static/img/blind-pig.png');
+    height: 15rem;
+    width: 32rem;
+    background-position: top right;
+    background-size: 350px 350px;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.cont-bottom-pig-bottom {
+    z-index: 50;
+    position: absolute;
+    right: 0;
+    bottom: -3.5%;
+    background-image: url('/static/img/blind-pig_white.png');
+    height: 7.2rem;
+    width: 32rem;
+    background-position: bottom right;
+    background-size: 350px 350px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
 }
 
 #fader {
