@@ -4,7 +4,7 @@ section: home
 ---
 <section class="hero">
     <div class="container mx-auto">
-        <div class="w-full md:w-1/2 mr-auto">
+        <div class="w-full lg:w-1/2 mr-auto">
             <h1>{{ preview_title }}</h1>
             <h3 class="hero-subtitle">{{ preview_subtitle }}</h3>
             <p>
@@ -20,22 +20,25 @@ section: home
 
 <section class="favorites">
     <div class="container mx-auto">
-        <div class="w-32 opacity-50 mx-auto">
+        <div class="w-36 opacity-50 mx-auto">
             <img src="/static/img/flourish_top.png" alt="flourish top" />
         </div>
         <div class="content text-medium">
-            <h4>{{ favorites_title }}</h4>
+            <h4 class="text-cream">{{ favorites_title }}</h4>
             <p>{{ favorites_subtitle }}</p>
-            <div class="py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-12">
+            <div class="py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-16">
                 {%- for item in favorites_items %}
                     <div>
                         <img src="/static/img/photo-frame.png" class="w-full h-auto" />
                     </div>
                 {%- endfor %}
             </div>
-            <div class="py-4">
+            <div class="pb-4 pt-2">
                 <a href="/./menu" class="btn btn-default mx-auto">{{ menu_button }}</a>
             </div>
+        </div>
+        <div class="w-36 opacity-50 mx-auto">
+            <img src="/static/img/flourish_bottom.png" alt="flourish top" />
         </div>
     </div>
     <div class="hidden lg:block hero-blindpig-bottom"></div>
@@ -47,8 +50,8 @@ section: home
     </div>
     <div class="w-full lg:w-3/5 lg:my-auto">
         <div class="w-4/5 mx-auto text-medium">
-            <h2>{{ menu_title }}</h2>
-            <h3 class="py-2">{{ menu_subtitle }}</h3>
+            <h2 class="text-cream">{{ menu_title }}</h2>
+            <h3 class="text-cream pb-3 pt-1">{{ menu_subtitle }}</h3>
             <p class="pb-2">
                 {{ menu_text }}
             </p>

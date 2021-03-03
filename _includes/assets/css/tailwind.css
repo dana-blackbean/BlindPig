@@ -13,19 +13,13 @@ main {
     overflow: hidden;
 }
 
-@media (min-width: 1280px) {
-    .container {
-        max-width: 1150px;
-    }
-}
-
 p {
     line-height: 1.9;
 }
 
 h1 {
     text-transform: uppercase;
-    font-size: 60px;
+    font-size: 48px;
     font-family: rosella-hatched,sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -34,7 +28,7 @@ h1 {
 
 h2 {
     font-family: rosella-hatched,sans-serif;
-    font-size: 52px;
+    font-size: 44px;
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
@@ -59,15 +53,24 @@ h4, label {
     font-style: normal;
 }
 
+@media (min-width: 1280px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 52px;
+    }
+}
+
 input, textarea {
     display: block;
     width: 100%;
-    padding: 0.2rem;
     border: 1px solid #2D1611;
     color: #2D1611;
     background: transparent;
     margin-bottom: 1rem;
-    @apply relative z-50 transition ease-in-out duration-200;
+    @apply relative p-2 z-50 transition ease-in-out duration-200;
 }
 
 input:focus, textarea:focus {
@@ -83,6 +86,7 @@ label {
 .bg-header { background: #1D120A; }
 .text-dark { color: #2D1611; }
 .text-medium { color: #E4D8D5; }
+.text-cream { color: #DCBDA1; }
 
 header {
     background: #1D120A;
@@ -202,6 +206,31 @@ header button {
     background-repeat: no-repeat;
 }
 
+.store-cigar {
+    position: absolute;
+    left: -10%;
+    top: 33.9%;
+    background-image: url('/static/img/cig.png');
+    height: 19rem;
+    width: 19rem;
+    background-position: left center;
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+    filter: grayscale(100%);
+}
+
+.store-blind-pig {
+    position: absolute;
+    right: -1%;
+    top: -35%;
+    background-image: url('/static/img/blind-pig.png');
+    height: 19rem;
+    width: 19rem;
+    background-position: right bottom;
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+}
+
 .favorites {
     position: relative;
     padding-top: 7rem;
@@ -226,7 +255,7 @@ header button {
 }
 
 .favorites h4 {
-    padding-bottom: 0.5rem;
+    @apply pb-4;
 }
 
 .menu {
@@ -241,7 +270,7 @@ header button {
 
 @media (min-width: 1280px) {
     .floating-image {
-        margin-top: 40%;
+        margin-top: 42.5%;
         @apply absolute;
     }
 }
@@ -437,8 +466,7 @@ header button {
 .about-section h3, .why-section h3 {
     color: #CCA025;
     letter-spacing: 4px;
-    padding-top: 0.5rem;
-    padding-bottom: 0.8rem;
+    @apply pb-4 pt-3;
 }
 
 .why-section {
@@ -449,7 +477,7 @@ header button {
 }
 
 .why-section > .image-wrapper {
-    padding: 10rem 0;
+    padding: 12rem 0;
 }
 
 .why-section .when-pigs-fly {
@@ -476,7 +504,13 @@ header button {
 }
 
 .team-section .info h3 {
-    @apply pb-2 uppercase;
+    @apply pb-2 uppercase text-base;
+}
+
+@media (min-width: 1280px) {
+    .team-section .info h3 {
+        font-size: 30px;
+    }
 }
 
 .team-section .info p {
@@ -484,7 +518,7 @@ header button {
 }
 
 .team-section .splide {
-    @apply pt-8;
+    @apply pt-10;
 }
 
 .splide__arrow--prev {
