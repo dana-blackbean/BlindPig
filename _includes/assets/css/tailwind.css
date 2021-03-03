@@ -500,7 +500,7 @@ header button {
 }
 
 .team-section .info {
-    @apply pt-6 text-center;
+    @apply pt-8 text-center;
 }
 
 .team-section .info h3 {
