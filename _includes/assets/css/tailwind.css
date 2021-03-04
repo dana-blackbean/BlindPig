@@ -86,7 +86,7 @@ input, textarea {
     color: #2D1611;
     background: transparent;
     margin-bottom: 1rem;
-    @apply relative p-2 z-50 transition ease-in-out duration-200;
+    @apply relative p-3 z-50 transition ease-in-out duration-200;
 }
 
 input:focus, textarea:focus {
@@ -508,19 +508,15 @@ header {
     @apply pb-36;
 }
 
-.why-section > .image-wrapper {
-    padding: 12rem 0;
-}
-
 .why-section .when-pigs-fly {
     z-index: 50;
     position: absolute;
-    top: -30px;
-    right: -42%;
+    top: 0;
+    right: -12%;
     background-image: url(/static/img/when-pigs-fly.png);
     height: 100%;
     width: 100%;
-    background-position: bottom;
+    background-position: right;
     background-size: 700px 700px;
     background-repeat: no-repeat;
     opacity: 0.5;
@@ -603,7 +599,7 @@ header {
 .cont-bottom-pig-top {
     position: absolute;
     right: 0;
-    bottom: -7%;
+    bottom: -3.2%;
     background-image: url('/static/img/blind-pig.png');
     height: 15rem;
     width: 32rem;
@@ -618,7 +614,7 @@ header {
     z-index: 50;
     position: absolute;
     right: 0;
-    bottom: -18.4%;
+    bottom: -14.2%;
     background-image: url('/static/img/blind-pig_white.png');
     height: 7.2rem;
     width: 32rem;
