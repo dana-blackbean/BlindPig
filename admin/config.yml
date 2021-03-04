@@ -24,16 +24,14 @@ collections:
             }
           - { label: "Permalink", name: "permalink", widget: "text" }
           - {
-              label: "Preview title",
+              label: "Hero title",
               name: "preview_title",
               widget: "text",
             }
-          - { label: "Preview subtitle", name: "preview_subtitle", widget: "text" }
-          - { label: "Preview text", name: "preview_text", widget: "text" }
-          - { label: "Hero Image", name: "hero_image", widget: "image" }
-          - { label: "Hero Button", name: "hero_button", widget: "text" }
-          - { label: "Purple title", name: "purple_title", widget: "text" }
-          - { label: "Purple text", name: "purple_text", widget: "text" }
+          - { label: "Hero subtitle", name: "preview_subtitle", widget: "text" }
+          - { label: "Hero text", name: "preview_text", widget: "text" }
+          - { label: "Hero button", name: "hero_button", widget: "text" }
+          - { label: "Hero button link", name: "hero_href", widget: "text" }
           - { label: "Favorites text", name: "favorites_title", widget: "text" }
           - { label: "Favorites button", name: "favorites_button", widget: "text" }
           - {
@@ -49,6 +47,7 @@ collections:
           - { label: "Menu title", name: "menu_title", widget: "text" }
           - { label: "Menu subtitle", name: "menu_subtitle", widget: "text" }
           - { label: "Menu button", name: "menu_button", widget: "text" }
+          - { label: "Menu button link", name: "menu_href", widget: "text" }
           - { label: "Contact title", name: "contact_title", widget: "text" }
           - { label: "Contact subtitle", name: "contact_subtitle", widget: "text" }
           - { label: "Contact submit button", name: "contact_button", widget: "text" }
