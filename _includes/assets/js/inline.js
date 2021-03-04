@@ -12,7 +12,7 @@ function fadeInPage() {
   if (!window.AnimationEvent) { return; }
   var fader = document.getElementById('fader');
   setTimeout(
-    function() 
+    function()
     {
       fader.classList.add('fade-out');
     }, 500);
@@ -21,16 +21,10 @@ function fadeInPage() {
 function updateElementPadding() {
   const getElement = document.querySelector('main');
   const getMobileHeader = document.getElementById('mobileNav');
-  if (getElement && getMobileHeader && getMobileHeader.offsetHeight !== 0) {
+  if (getElement && getMobileHeader) {
     getElement.style.paddingTop = getMobileHeader.offsetHeight + 'px';
   }
 }
-
-$(document).ready(function () {
-  updateElementPadding();
-  $(window).resize(updateElementPadding());
-});
-
 
 function toggleNav() {
   if ($(".mobile-nav").css('width') !== "0px") {
@@ -71,3 +65,11 @@ function showMenu(id) {
     navElement.addClass('active');
   }
 }
+
+$(document).ready(function () {
+  updateElementPadding();
+});
+
+$(window).resize(function() {
+  updateElementPadding();
+});
