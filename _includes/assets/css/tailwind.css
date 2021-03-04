@@ -523,7 +523,7 @@ header {
 
 .team-section {
     background: #E4D8D5;
-    @apply py-16;
+    @apply pt-16 pb-20;
 }
 
 .team-section .info {
