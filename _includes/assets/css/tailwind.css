@@ -36,6 +36,12 @@ h2 {
     margin-top: -23px;
 }
 
+.h1-leading, .h2-leading {
+    line-height: 1.15;
+    margin-top: -16px !important;
+    padding-bottom: 0.5rem;
+}
+
 h3 {
     text-transform: uppercase;
     font-size: 30px;
@@ -149,8 +155,7 @@ header button {
 
 .hero-subtitle {
     color: #CCA025;
-    padding-top: 0.25rem;
-    padding-bottom: 0.4rem;
+    @apply pt-2 pb-4;
 }
 
 .hero {
@@ -426,7 +431,7 @@ header button {
 
 .menu-pigsfly-top {
     position: absolute;
-    left: 0;
+    left: -5%;
     top: 43px;
     background-image: url('/static/img/when-pigs-fly-inverted_White.png');
     height: 23rem;
@@ -440,10 +445,10 @@ header button {
 .menu-pigsfly-bottom {
     z-index: 50;
     position: absolute;
-    left: 0;
-    top: 400px;
+    left: -5%;
+    top: 176px;
     background-image: url('/static/img/when-pigs-fly-inverted.png');
-    height: 9rem;
+    height: 23rem;
     width: 32rem;
     background-position: bottom;
     background-size: 500px 500px;
@@ -460,7 +465,7 @@ header button {
 
 .about-section h2, .why-section h2 {
     font-size: 3em;
-    letter-spacing: 6px;
+    letter-spacing: 8px;
 }
 
 .about-section h3, .why-section h3 {
@@ -571,7 +576,7 @@ header button {
 .cont-bottom-pig-top {
     position: absolute;
     right: 0;
-    bottom: 1%;
+    bottom: -1%;
     background-image: url('/static/img/blind-pig.png');
     height: 15rem;
     width: 32rem;
@@ -586,7 +591,7 @@ header button {
     z-index: 50;
     position: absolute;
     right: 0;
-    bottom: -9.5%;
+    bottom: -11.8%;
     background-image: url('/static/img/blind-pig_white.png');
     height: 7.2rem;
     width: 32rem;
