@@ -349,10 +349,10 @@ header button {
 
 .footer-social {
     color: #CCA025;
-    font-size: 1.25em;
     transition: ease-in-out .25s;
-    padding: 0.35rem;
     opacity: 1;
+    text-align: center;
+    @apply text-3xl;
 }
 
 .footer-social:hover {
