@@ -215,13 +215,12 @@ header button {
     position: absolute;
     left: -10%;
     top: 33.9%;
-    background-image: url('/static/img/cig.png');
-    height: 19rem;
-    width: 19rem;
+    background-image: url('/static/img/cig_black.png');
+    height: 25rem;
+    width: 25rem;
     background-position: left center;
-    background-size: 300px 300px;
+    background-size: 400px 400px;
     background-repeat: no-repeat;
-    filter: grayscale(100%);
 }
 
 .store-blind-pig {
