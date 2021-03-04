@@ -28,9 +28,9 @@ function updateElementPadding() {
 
 function toggleNav() {
   if ($(".mobile-nav").css('width') !== "0px") {
-    $(".mobile-nav").css('width', '0');
+    $(".mobile-nav").animate({ width: '0px' }, 300);
   } else {
-    $(".mobile-nav").css('width', '250px');
+    $(".mobile-nav").animate({ width: '250px' }, 300);
   }
 }
 
