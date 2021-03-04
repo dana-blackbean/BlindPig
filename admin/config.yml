@@ -148,7 +148,13 @@ collections:
           - { label: "Bottom title", name: "bottom_title", widget: "text" }
           - { label: "Bottom tagline", name: "bottom_tagline", widget: "text" }
           - { label: "Bottom button", name: "bottom_button", widget: "text" }
-          - { label: "Bottom button link", name: "bottom_href", widget: "text" }
+          - { label: "Bottom button link", name: "bottom_href", widget: "text" }'
+          - { label: "Shop pictures", name: "shop_items", widget: "list", allow_add: true,
+              fields: [
+                { label: "Item name", name: "name", widget: "text" },
+                { label: "Item image", name: "image", widget: "text", required: false, description: "NOTE: If you do not use an image then it will appear as a gray background" }
+              ]
+            }
       # Site Settings
   - name: "settings"
     label: "Settings"
