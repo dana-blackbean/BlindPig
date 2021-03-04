@@ -19,7 +19,7 @@ p {
 
 h1 {
     text-transform: uppercase;
-    font-size: 48px;
+    font-size: 38px;
     font-family: rosella-hatched,sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -28,12 +28,22 @@ h1 {
 
 h2 {
     font-family: rosella-hatched,sans-serif;
-    font-size: 44px;
+    font-size: 34px;
     font-weight: 400;
     font-style: normal;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-top: -23px;
+}
+
+@media (min-width: 1280px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 44px;
+    }
 }
 
 .h1-leading, .h2-leading {
@@ -462,8 +472,14 @@ header button {
 }
 
 .about-section h2, .why-section h2 {
-    font-size: 3em;
+    font-size: 2.5em;
     letter-spacing: 8px;
+}
+
+@media (min-width: 1024px) {
+    .about-section h2, .why-section h2 {
+        font-size: 3em;
+    }
 }
 
 .about-section h3, .why-section h3 {

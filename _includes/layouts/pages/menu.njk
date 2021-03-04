@@ -27,7 +27,7 @@ section: menu
         <div id="menu_{{ loop.index0 }}" class="{% if loop.index0 != 0 %}hidden{% endif %}">
             {%- for menu in menus[loop.index0].menu_items -%}
                 <div class="{% if menu.background %}bg-medium{% else %}bg-white{% endif %}">
-                    <div class="container mx-auto py-8 md:py-20">
+                    <div class="container mx-auto py-16 md:py-20">
                         <div class="flex justify-center">
                             <div class="w-16 my-auto">
                                 <img src="/static/img/flourish_bottom.png" alt="Flourish bottom" />
