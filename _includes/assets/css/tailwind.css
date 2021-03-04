@@ -361,6 +361,11 @@ header {
     display: block;
     color: #fff;
     padding-bottom: 0.25rem;
+    @apply transition ease-in-out duration-200;
+}
+
+.footer-links .item:hover {
+    color: #CCA025;
 }
 
 .footer-social {
