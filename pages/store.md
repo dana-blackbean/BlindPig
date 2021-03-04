@@ -12,7 +12,7 @@ bottom_tagline: Coming Soon
 bottom_text: Lorem ipsum lorem ipsum
 bottom_button: CTA
 bottom_href: /
-shop_items:
+shop_items: 
     - name: Row 1, Item 1
       image: 
     - name: Row 1, Item 2
