@@ -12,9 +12,9 @@ hero_href: /about
 favorites_title: Fan Favourites
 favorites_subtitle: Lore ipsum dolor sit amet, consecteteur adipiscing elit
 favorites_items: 
-  - image: /static/img/photo-frame.svg
-  - image: /static/img/photo-frame.svg
-  - image: /static/img/photo-frame.svg
+  - image: /static/img/photo-frame.png
+  - image: /static/img/photo-frame.png
+  - image: /static/img/photo-frame.png
 favorites_button: See The Menu
 favorites_href: /menu
 menu_title: Our Menu

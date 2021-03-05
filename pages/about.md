@@ -15,11 +15,11 @@ team_title: The Team
 team_members:
   - name: John Smith
     role: Owner
-    picture: /static/img/photo-frame.svg
+    picture: /static/img/photo-frame.png
   - name: John Smith
     role: Owner
-    picture: /static/img/photo-frame.svg
+    picture: /static/img/photo-frame.png
   - name: John Smith
     role: Owner
-    picture: /static/img/photo-frame.svg
+    picture: /static/img/photo-frame.png
 ---
