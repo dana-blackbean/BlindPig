@@ -139,11 +139,10 @@ header {
 
 .mobile-nav a {
     display: block;
-    padding: 0.5rem 0.75rem;
     text-transform: uppercase;
     color: #fff;
     white-space: nowrap;
-    @apply transition ease-in-out duration-200;
+    @apply p-4 transition ease-in-out duration-200;
 }
 
 .mobile-nav a:hover, .mobile-nav .active {
