@@ -1,15 +1,15 @@
 <header class="hidden lg:block">
     {% include "components/header/desktop.njk" %}
 </header>
-<header id="mobileNav" class="bg-black fixed block w-full shadow" style="top: 0; z-index: 100;">
-    <div class="flex lg:hidden px-5 py-3">
-        <div class="w-10 my-auto mr-auto">
+<header id="mobileNav" class="bg-black fixed block w-full shadow" style="top: 0; z-index: 1000;">
+    <div class="flex lg:hidden py-6 px-8">
+        <div class="w-12 my-auto mr-auto">
             <a href="/">
                 <img src="{{ metadata.logo }}" alt="blind pig" />
             </a>
         </div>
         <div class="w-auto my-auto">
-            <button class="flex" type="button" onClick="toggleNav()"><i class="fas fa-bars text-2xl"></i></button>
+            <button class="flex" type="button" onClick="toggleNav()"><i class="fas fa-bars text-3xl"></i></button>
         </div>
     </div>
     {% include "components/header/mobile.njk" %}

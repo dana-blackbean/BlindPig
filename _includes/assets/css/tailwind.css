@@ -752,3 +752,7 @@ header {
     opacity: 1;
     animation-name: fade-in;
 }
+
+.z-100 {
+    z-index: 100;
+}

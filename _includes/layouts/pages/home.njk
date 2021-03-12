@@ -26,9 +26,9 @@ section: home
         <div class="content text-medium">
             <h4 class="text-cream">{{ favorites_title }}</h4>
             <p>{{ favorites_subtitle }}</p>
-            <div class="py-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 place-items-center gap-16">
+            <div class="py-10 flex flex-wrap justify-center lg:justify-evenly gap-12">
                 {%- for item in favorites_items %}
-                    <div>
+                    <div class="w-80">
                         <img src="/static/img/photo-frame.svg" class="w-full h-auto" />
                     </div>
                 {%- endfor %}
@@ -49,14 +49,14 @@ section: home
         <img src="/static/img/cig.png" alt="cigarette" />
     </div>
     <div class="w-full lg:w-3/5 lg:my-auto">
-        <div class="w-4/5 mx-auto text-medium">
+        <div class="w-4/5 mx-auto text-medium text-center lg:text-left">
             <h2 class="text-cream">{{ menu_title }}</h2>
             <h3 class="text-cream pb-4 pt-6">{{ menu_subtitle }}</h3>
             <p>
                 {{ menu_text }}
             </p>
             <div class="mt-8">
-                <a href="/./menu" class="btn btn-default">{{ menu_button }}</a>
+                <a href="/./menu" class="btn btn-default mx-auto lg:mx-0">{{ menu_button }}</a>
             </div>
         </div>
     </div>
