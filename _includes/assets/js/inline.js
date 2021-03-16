@@ -66,6 +66,15 @@ function showMenu(id) {
   }
 }
 
+function fadeOnLoad() {
+  const element = document.getElementsByClassName('pageOnLoad')[0];
+  if (element) {
+    element.style.opacity = '0';
+  }
+}
+
+window.onload = fadeOnLoad;
+
 $(document).ready(function () {
   updateElementPadding();
 });

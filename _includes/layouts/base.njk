@@ -2,14 +2,8 @@
 <html {% if section %} data-current="{{ section }}"{% endif %} lang="en">
 
   {% include "components/head.njk" %}
-      <main>
-            <svg id="fader"></svg>
-            <script>
-                fadeInPage();
-            </script>
-      </main>
-
   <body>
+    <div class="pageOnLoad"></div>
     {% include "components/header/header.njk" %}
     <main>
       {{ layoutContent | safe }}

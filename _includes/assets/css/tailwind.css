@@ -719,38 +719,11 @@ header {
     @apply pb-3;
 }
 
-
-#fader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 999999;
+.pageOnLoad {
     pointer-events: none;
-    background: white;
-    animation-duration: 700ms;
-    animation-timing-function: ease-in-out;
-}
-
-@keyframes fade-out {
-    from { opacity: 1 }
-    to { opacity: 0 }
-}
-
-@keyframes fade-in {
-    from { opacity: 0 }
-    to { opacity: 1 }
-}
-
-#fader.fade-out {
-    opacity: 0;
-    animation-name: fade-out;
-}
-
-#fader.fade-in {
-    opacity: 1;
-    animation-name: fade-in;
+    cursor: default;
+    z-index: 1001;
+    @apply fixed w-screen h-screen bg-white transition-all duration-500 ease-in-out;
 }
 
 .z-100 {
