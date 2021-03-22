@@ -11,18 +11,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate"
+    "url": "https://github.com/Blackbeancreative/eleventy-netlify-tailwind-boilerplate-new"
   },
   "author": {
-    "name": "Dan Urbanowicz",
-    "email": "dan.urbanowicz@gmail.com",
-    "url": "https://www.danurbanowicz.com/"
+    "name": "Blackbean",
+    "email": "hello@blackbeancreative.com",
+    "url": "https://blackbeancreative.com"
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate/issues"
+    "url": "https://github.com/Blackbeancreative/eleventy-netlify-tailwind-boilerplate-new/issues"
   },
-  "homepage": "https://github.com/danurbanowicz/eleventy-netlify-boilerplate",
+  "homepage": "https://github.com/Blackbeancreative/eleventy-netlify-tailwind-boilerplate-new",
   "devDependencies": {
     "@11ty/eleventy": "^0.11.1",
     "autoprefixer": "^10.2.4",
