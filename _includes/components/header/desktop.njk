@@ -1,0 +1,29 @@
+<nav class="container mx-auto hidden lg:block">
+    <div class="flex justify-center relative z-50">
+        <div class="w-64 text-center my-auto">
+            <a class="nav-link {% if section == 'about' %}nav-active{% endif %}" href="/./about">
+                Our Story
+            </a>
+        </div>
+        <div class="w-64 text-center my-auto">
+            <a class="nav-link {% if section == 'menu' %}nav-active{% endif %}" href="/./menu">
+                Menu
+            </a>
+        </div>
+        <div class="w-64 py-4 text-center">
+            <a class="nav-link" href="{{ '/' | url }}">
+                <img class="block w-20 mx-auto h-auto" src="{{ metadata.logo }}" alt="blind pig logo">
+            </a>
+        </div>
+        <div class="w-64 text-center my-auto">
+            <a class="nav-link {% if section == 'contact' %}nav-active{% endif %}" href="/./contact">
+                Contact Us
+            </a>
+        </div>
+        <div class="w-64 text-center my-auto">
+            <a class="nav-link {% if section == 'store' %}nav-active{% endif %}" href="/./store">
+                Get Merch
+            </a>
+        </div>
+    </div>
+</nav>

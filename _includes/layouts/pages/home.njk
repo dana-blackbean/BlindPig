@@ -1,0 +1,66 @@
+---
+layout: layouts/base.njk
+section: home
+---
+<section class="hero">
+    <div class="container mx-auto">
+        <div class="w-full lg:w-1/2 mr-auto">
+            <h1 class="w-full xl:w-4/5 2xl:w-70pct h1-leading pb-2">{{ preview_title }}</h1>
+            <h3 class="hero-subtitle">{{ preview_subtitle }}</h3>
+            <p>
+                {{ preview_text }}
+            </p>
+            <div class="mt-8">
+                <a href="/./#story" class="btn btn-invert">Our Story</a>
+            </div>
+        </div>
+    </div>
+    <div class="hero-blindpig-top"></div>
+</section>
+
+<section class="favorites pb-24 md:pb-16 xl:pb-8 2xl:pb-0">
+    <div class="container mx-auto">
+        <div class="w-36 opacity-50 mx-auto">
+            <img src="/static/img/flourish-top.svg" alt="flourish top" />
+        </div>
+        <div class="content text-medium">
+            <h4 class="text-cream">{{ favorites_title }}</h4>
+            <p>{{ favorites_subtitle }}</p>
+            <div class="py-10 flex flex-wrap justify-center lg:justify-evenly gap-12">
+                {%- for item in favorites_items %}
+                    <div class="w-80">
+                        <img src="/static/img/photo-frame.svg" class="w-full h-auto" />
+                    </div>
+                {%- endfor %}
+            </div>
+            <div class="pb-4 pt-2">
+                <a href="/./menu" class="btn btn-default mx-auto">{{ menu_button }}</a>
+            </div>
+        </div>
+        <div class="w-36 opacity-50 mx-auto">
+            <img src="/static/img/flourish-bottom.svg" alt="flourish top" />
+        </div>
+    </div>
+    <div class="hero-blindpig-bottom"></div>
+</section>
+
+<section class="menu flex">
+    <div class="hidden lg:block lg:w-2/5">
+        <img src="/static/img/cig.png" alt="cigarette" />
+    </div>
+    <div class="w-full lg:w-3/5 lg:my-auto">
+        <div class="w-4/5 mx-auto text-medium text-center lg:text-left">
+            <h2 class="text-cream">{{ menu_title }}</h2>
+            <h3 class="text-cream pb-4 pt-6">{{ menu_subtitle }}</h3>
+            <p>
+                {{ menu_text }}
+            </p>
+            <div class="mt-8">
+                <a href="/./menu" class="btn btn-default mx-auto lg:mx-0">{{ menu_button }}</a>
+            </div>
+        </div>
+    </div>
+    <div class="hidden lg:block hero-pigsfly-top opacity-50"></div>
+</section>
+
+{% include "components/contact.njk" %}

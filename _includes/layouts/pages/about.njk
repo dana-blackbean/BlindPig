@@ -1,0 +1,120 @@
+---
+layout: layouts/base.njk
+section: about
+---
+<section class="about-section">
+    <div class="container mx-auto text-center lg:text-left">
+        <div class="flex flex-wrap">
+            <div class="hidden lg:block w-full lg:w-1/4 xl:w-2/5 lg:pr-16">
+                <img class="block w-16 xl:w-32 mb-6 opacity-50 mx-auto" src="/static/img/flourish-top.svg" alt="flourish top" />
+                <img class="block mx-auto" src="{{ headline_image }}" alt="headline" />
+                <img class="block w-16 xl:w-32 mt-6 opacity-50 mx-auto" src="/static/img/flourish-bottom.svg" alt="flourish flourish" />
+            </div>
+            <div class="w-full lg:w-3/4 xl:w-3/5 my-auto">
+                <h2>{{ headline_title }}</h2>
+                <h3>{{ headline_subtitle }}</h3>
+                <p class="w-full lg:w-2/3">
+                    {{ headline_text }}
+                </p>
+                <div class="mt-8">
+                    <a href="/./menu" class="btn btn-default mx-auto lg:mx-0">{{ headline_button }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="why-section pt-36">
+    <div class="container mx-auto text-center lg:text-left">
+        <div class="w-full lg:w-4/5 relative z-100">
+            <h2 class="w-full xl:w-3/4">{{ why_title }}</h2>
+            <h3>{{ why_subtitle }}</h3>
+            <p class="w-full lg:w-1/2 xl:w-2/3">
+                {{ why_text }}
+            </p>
+            <div class="mt-8">
+                <a href="#" class="btn btn-invert mx-auto lg:mx-0">{{ why_button }}</a>
+            </div>
+        </div>
+    </div>
+    <div class="when-pigs-fly hidden sm:block"></div>
+</section>
+
+<section class="team-section">
+    <div class="container mx-auto">
+        <h1 class="text-center">{{ team_title }}</h1>
+        <div class="hidden lg:block splide">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    {% for item in team_members %}
+                        <li class="splide__slide px-8">
+                            <img class="clip-frame" src="{{ item.picture }}" alt="frame" />
+                            <div class="info">
+                                <h3>{{ item.name }}</h3>
+                                <p>{{ item.role }}</p>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="hidden md:block lg:hidden splide splide__tablet">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    {% for item in team_members %}
+                        <li class="splide__slide px-8 lg:px-16">
+                            <img class="clip-frame" src="{{ item.picture }}" alt="frame" />
+                            <div class="info">
+                                <h3>{{ item.name }}</h3>
+                                <p>{{ item.role }}</p>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="md:hidden splide splide__mobile">
+            <div class="splide__track">
+                <ul class="splide__list">
+                    {% for item in team_members %}
+                        <li class="splide__slide px-8 lg:px-16">
+                            <img class="clip-frame" src="{{ item.picture }}" alt="frame" />
+                            <div class="info">
+                                <h3>{{ item.name }}</h3>
+                                <p>{{ item.role }}</p>
+                            </div>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    document.addEventListener( 'DOMContentLoaded', function () {
+        const element = document.getElementsByClassName('splide')[0];
+        const elementMobile = document.getElementsByClassName('splide__mobile')[0];
+        const elementTablet = document.getElementsByClassName('splide__tablet')[0];
+
+        if (element)
+            new Splide( '.splide', {
+                type   : 'loop',
+                perPage: 3,
+                perMove: 1,
+            }).mount();
+
+        if (elementMobile)
+            new Splide( '.splide__mobile', {
+                type   : 'loop',
+                perMove: 1,
+            }).mount();
+
+        if (elementTablet) 
+            new Splide( '.splide__tablet', {
+                type   : 'loop',
+                perPage: 2,
+                perMove: 1,
+            }).mount();
+    } );
+</script>

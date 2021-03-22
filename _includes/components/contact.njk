@@ -1,0 +1,48 @@
+{% if section == 'contact' %}
+    <div class="hidden xl:block cont-pigsfly-top"></div>
+    <div class="hidden xl:block cont-pigsfly-bottom"></div>
+    <div class="hidden 2xl:block cont-bottom-pig-top"></div>
+    <div class="hidden 2xl:block cont-bottom-pig-bottom"></div>
+{% endif %}
+<section class="contact">
+    <div class="container mx-auto">
+        <div class="text-center w-full md:w-4/5 xl:w-3/5 mx-auto">
+            <h2>{{ contact_title }}</h2>
+            <p class="pt-3">{{ contact_text }}</p>
+        </div>
+        <form name="contact-form" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you">
+            <input type="hidden" name="form-name" value="contact">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-4 text-center lg:text-left">
+                <div>
+                    <label for="firstName">First Name</label>
+                    <input id="firstName" name="firstName" type="text" required />
+                </div>
+
+                <div>
+                    <label for="lastName">Last Name</label>
+                    <input id="lastName" name="lastName" type="text" required />
+                </div>
+
+                <div>
+                    <label for="emailAddress">Email Address</label>
+                    <input id="emailAddress" name="emailAddress" type="email" required />
+                </div>
+
+                <div>
+                    <label for="phoneNumber">Phone Number</label>
+                    <input id="phoneNumber" name="phoneNumber" type="tel" required />
+                </div>
+
+                <div class="col-span-full">
+                    <label for="messageContent">Message</label>
+                    <textarea id="messageContent" name="message" type="text" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="mt-8">
+                <input type="hidden" name="form-name" value="contact-form" />
+                <button type="submit" class="btn btn-invert mx-auto lg:mx-0">{{ contact_button }}</button>
+            </div>
+        </form>
+    </div>
+    {% if section != 'contact' %}<div class="hidden lg:block hero-pigsfly-bottom opacity-50"></div>{% endif %}
+</section>

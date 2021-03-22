@@ -1,0 +1,731 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: open-sans,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1px;
+}
+
+main {
+    overflow: hidden;
+}
+
+p {
+    line-height: 1.9;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 38px;
+    font-family: rosella-hatched,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: -28px;
+}
+
+h2 {
+    font-family: rosella-hatched,sans-serif;
+    font-size: 34px;
+    font-weight: 400;
+    font-style: normal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: -23px;
+}
+
+@media (min-width: 1280px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    h2 {
+        font-size: 44px;
+    }
+}
+
+.h1-leading, .h2-leading {
+    line-height: 1.15;
+    margin-top: -16px !important;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: merriweather, serif;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: 0.15em;
+}
+
+h4, label {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: merriweather, serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+@media (min-width: 1280px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 52px;
+    }
+}
+
+input, textarea {
+    display: block;
+    width: 100%;
+    border: 1px solid #2D1611;
+    color: #2D1611;
+    background: transparent;
+    margin-bottom: 1rem;
+    @apply relative p-3 z-50 transition ease-in-out duration-200;
+}
+
+input:focus, textarea:focus {
+    @apply outline-none shadow-md;
+}
+
+label {
+    padding-bottom: 0.2rem;
+}
+
+.bg-dark { background: #2D1611; }
+.bg-medium { background: #E4D8D5; }
+.bg-header { background: #1D120A; }
+.text-dark { color: #2D1611; }
+.text-medium { color: #E4D8D5; }
+.text-cream { color: #DCBDA1; }
+
+header {
+    background: #1D120A;
+}
+
+.nav-link {
+    font-size: 20px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+
+    color: #fff;
+
+    font-family: prohibition, sans-serif;
+    font-weight: 400;
+    font-style: italic;
+
+    transition: ease-in-out .25s;
+}
+
+.nav-link:hover, .nav-active {
+    color: #CCA025;
+}
+
+.mobile-nav {
+    width: 0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100vh;
+    z-index: 1000;
+    background: #000;
+}
+
+.mobile-nav a {
+    display: block;
+    text-transform: uppercase;
+    color: #fff;
+    white-space: nowrap;
+    @apply p-4 transition ease-in-out duration-200;
+}
+
+.mobile-nav a:hover, .mobile-nav .active {
+    background: #222;
+}
+
+#mobileNav button {
+    @apply text-white transition ease-in-out duration-500;
+}
+
+#mobileNav button:hover {
+    color: #CCA025;
+}
+
+#mobileNav button:focus {
+    @apply outline-none;
+}
+
+.hero-img-black {
+    position: absolute;
+    right: 0;
+    height: 250px;
+    width: 250px;
+    background-size: contain;
+    background: url('/static/img/blind-pig.png');
+}
+
+.hero-subtitle {
+    color: #CCA025;
+    @apply pt-2 pb-4;
+}
+
+.hero {
+    position: relative;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background: #fff;
+}
+
+.hero-blindpig-top {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url('/static/img/blind-pig.png');
+}
+
+.hero-blindpig-bottom {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url('/static/img/blind-pig_white.png');
+}
+
+@media (min-width: 500px) {
+    .hero-blindpig-top {
+        height: 14.5rem;
+        width: 16rem;
+        background-size: 300px 300px;
+        background-repeat: no-repeat;
+    }
+
+    .hero-blindpig-bottom {
+        background-position: 0% 100%;
+        height: 4.5rem;
+        width: 16rem;
+        background-size: 300px 300px;
+        background-repeat: no-repeat;
+    }
+}
+
+
+@media (min-width: 1024px) {
+    .hero-blindpig-top {
+        height: 28rem;
+        width: 32rem;
+        background-size: 600px 600px;
+        background-repeat: no-repeat;
+    }
+
+    .hero-blindpig-bottom {
+        background-position: 0% 320%;
+        height: 28.8rem;
+        width: 32rem;
+        background-size: 600px 600px;
+        background-repeat: no-repeat;
+    }
+
+}
+
+
+
+@media (min-width: 1280px) {
+    .hero-blindpig-top {
+        height: 38rem;
+        width: 46rem;
+        background-size: 800px 800px;
+        background-repeat: no-repeat;
+    }
+
+    .hero-blindpig-bottom {
+        background-position: 0% 320%;
+        height: 38rem;
+        width: 46rem;
+        background-size: 800px 800px;
+        background-repeat: no-repeat;
+    }
+
+}
+
+.hero-pigsfly-top {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url('/static/img/when-pigs-fly_White.png');
+    height: 12rem;
+    width: 32rem;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+}
+
+.hero-pigsfly-bottom {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url('/static/img/when-pigs-fly.png');
+    height: 19rem;
+    width: 32rem;
+    background-position: 0% 100%;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+}
+
+.store-cigar {
+    position: absolute;
+    left: -10%;
+    top: 33.9%;
+    background-image: url('/static/img/cig_black.png');
+    height: 25rem;
+    width: 25rem;
+    background-position: left center;
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+}
+
+.store-blind-pig {
+    position: absolute;
+    right: -1%;
+    top: -35%;
+    background-image: url('/static/img/blind-pig.png');
+    height: 19rem;
+    width: 19rem;
+    background-position: right bottom;
+    background-size: 300px 300px;
+    background-repeat: no-repeat;
+}
+
+.favorites {
+    position: relative;
+    padding-top: 7rem;
+    background: #2D1611;
+    text-align: center;
+}
+
+.favorites > .img-flourish-top {
+    background: url('/static/img/flourish_top.png');
+    width: 100%;
+    height: 100%;
+}
+
+.favorites > .img-flourish-bottom {
+    background: url('/static/img/flourish_bottom.png');
+}
+
+.favorites .content {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.favorites h4 {
+    @apply pb-4;
+}
+
+.menu {
+    position: relative;
+    padding-bottom: 7rem;
+    background: #2D1611;
+}
+
+.floating-image {
+    @apply relative z-10;
+}
+
+@media (min-width: 1280px) {
+    .floating-image {
+        margin-top: 42.5%;
+        @apply absolute;
+    }
+}
+
+.contact {
+    position: relative;
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    background: #E4D8D5;
+}
+
+.contact p {
+    padding-bottom: 4rem;
+}
+
+.btn-invert {
+    background: #CCA025;
+    border: 2px solid #CCA025;
+    color: #2D1611;
+}
+
+.btn-invert:hover {
+    background: transparent;
+    border-color: #CCA025;
+}
+
+.btn-default {
+    background: transparent;
+    border-color: #CCA025;
+    border: 2px solid #CCA025;
+}
+
+.btn-default:hover {
+    background: #CCA025;
+    color: #2D1611;
+}
+
+.btn {
+    display: flex;
+    width: max-content;
+    font-family: prohibition, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    transition: ease-in-out .25s;
+}
+
+.footer {
+    background: #2D1611;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.footer-links {
+    padding: 0.5rem;
+}
+
+.footer-links h4 {
+    color: #CCA025;
+    letter-spacing: 1px;
+    padding-bottom: 0.5rem;
+}
+
+.footer-links .item {
+    display: block;
+    color: #fff;
+    padding-bottom: 0.25rem;
+    @apply transition ease-in-out duration-200;
+}
+
+.footer-links .item:hover {
+    color: #CCA025;
+}
+
+.footer-social {
+    color: #CCA025;
+    transition: ease-in-out .25s;
+    opacity: 1;
+    text-align: center;
+    @apply text-3xl;
+}
+
+.footer-social:hover {
+    color: #fff;
+    opacity: 0.75;
+}
+
+.price-label {
+    border-color: #CCA025;
+    color: #CCA025;
+}
+
+.price-value {
+    font-size: 1.1em;
+    color: #CCA025;
+}
+
+.price-border {
+    border-top: 1px solid #CCA025;
+}
+
+.link-animation {
+    transition: ease-in-out .25s;
+}
+
+.menu-header {
+    background: #1D120A; /* old #000 */
+    color: #fff;
+    padding-top: 5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+}
+
+.menu-header h2 {
+    letter-spacing: 6px;
+}
+
+.menu-content {
+    position: relative;
+}
+
+.menu-navigation {
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin-top: -23px;
+    background: #f5f5f5;
+    border: 1px solid #ddd;
+}
+
+.menu-navigation .item {
+    display: block;
+    font-family: prohibition, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.3em;
+    transition: ease-in-out .25s;
+    padding: 0.45rem 0;
+}
+
+.menu-navigation .active,
+.menu-navigation .active:hover,
+.menu-navigation .active:focus {
+    background: #cca025;
+    outline: none;
+}
+
+.menu-navigation .not-active:hover, .menu-navigation .not-active:focus {
+    background: #ddd;
+    outline: none;
+}
+
+.menu-pigsfly-top {
+    position: absolute;
+    left: -5%;
+    top: 43px;
+    background-image: url('/static/img/when-pigs-fly-inverted_White.png');
+    height: 23rem;
+    width: 32rem;
+    background-position: top;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+}
+
+.menu-pigsfly-bottom {
+    z-index: 50;
+    position: absolute;
+    left: -5%;
+    top: 176px;
+    background-image: url('/static/img/when-pigs-fly-inverted.png');
+    height: 23rem;
+    width: 32rem;
+    background-position: bottom;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+}
+
+.about-section {
+    background: #1D120A;
+    color: #fff;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.about-section h2, .why-section h2 {
+    font-size: 2em;
+    letter-spacing: 8px;
+}
+
+@media (min-width: 1024px) {
+    .about-section h2, .why-section h2 {
+        font-size: 3em;
+    }
+}
+
+.about-section h3, .why-section h3 {
+    color: #CCA025;
+    letter-spacing: 4px;
+    @apply pb-4 pt-3;
+}
+
+.why-section {
+    position: relative;
+    background: #fff;
+    color: #000;
+    @apply pb-36;
+}
+
+.why-section .when-pigs-fly {
+    z-index: 50;
+    position: absolute;
+    top: 0;
+    right: -12%;
+    background-image: url(/static/img/when-pigs-fly.png);
+    height: 100%;
+    width: 100%;
+    background-position: right;
+    background-size: 700px 700px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.team-section {
+    background: #E4D8D5;
+    @apply pt-16 pb-20;
+}
+
+.team-section .info {
+    @apply pt-8 text-center;
+}
+
+.team-section .info h3 {
+    @apply pb-2 uppercase text-base;
+}
+
+@media (min-width: 1280px) {
+    .team-section .info h3 {
+        font-size: 30px;
+    }
+}
+
+.team-section .info p {
+    @apply text-sm uppercase;
+}
+
+.team-section .splide {
+    @apply pt-10;
+}
+
+.splide__arrow--prev {
+    left: -2em !important;
+}
+.splide__arrow--next {
+    right: -2em !important;
+}
+
+.splide__pagination {
+    top: 105%;
+}
+
+.splide__pagination__page, .splide__pagination__page.is-active {
+    background: #000 !important;
+}
+
+.splide__arrow {
+    background: transparent !important;
+}
+
+.cont-pigsfly-top {
+    position: absolute;
+    margin-left: -8%;
+    left: 0;
+    top: 35px;
+    background-image: url('/static/img/when-pigs-fly-inverted_White.png');
+    height: 8.6rem;
+    width: 32rem;
+    background-position: top;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+}
+
+.cont-pigsfly-bottom {
+    z-index: 50;
+    position: absolute;
+    margin-left: -8%;
+    left: 0;
+    background-image: url('/static/img/when-pigs-fly-inverted.png');
+    height: 24.5rem;
+    width: 32rem;
+    background-position: bottom;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    opacity: 0.35;
+}
+
+.cont-bottom-pig-top {
+    position: absolute;
+    right: 0;
+    bottom: -3.2%;
+    background-image: url('/static/img/blind-pig.png');
+    height: 15rem;
+    width: 32rem;
+    background-position: top right;
+    background-size: 350px 350px;
+    background-repeat: no-repeat;
+    z-index: 1;
+    opacity: 0.5;
+}
+
+.cont-bottom-pig-bottom {
+    z-index: 50;
+    position: absolute;
+    right: 0;
+    bottom: -14.2%;
+    background-image: url('/static/img/blind-pig_white.png');
+    height: 7.2rem;
+    width: 32rem;
+    background-position: bottom right;
+    background-size: 350px 350px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.hero-store {
+    background: #1D120A;
+    color: #fff;
+    @apply relative py-16;
+}
+
+.hero-store-pigsfly-top {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-image: url('/static/img/when-pigs-fly_White.png');
+    height: 27rem;
+    width: 32rem;
+    background-position:top;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.hero-store-pigsfly-bottom {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-image: url('/static/img/when-pigs-fly.png');
+    height: 4.5rem;
+    width: 32rem;
+    background-position: bottom;
+    background-size: 500px 500px;
+    background-repeat: no-repeat;
+    opacity: 0.5;
+}
+
+.subpage_content > h2 {
+    font-family: "merriweather", serif;
+    @apply pt-10 text-2xl;
+}
+
+.subpage_content > h2:first-child {
+    @apply pt-0;
+}
+
+.subpage_content {
+    @apply py-16;
+}
+
+.subpage_content p {
+    @apply pb-3;
+}
+
+.pageOnLoad {
+    pointer-events: none;
+    cursor: default;
+    z-index: 1001;
+    @apply fixed w-screen h-screen bg-white transition-all duration-500 ease-in-out;
+}
+
+.z-100 {
+    z-index: 100;
+}

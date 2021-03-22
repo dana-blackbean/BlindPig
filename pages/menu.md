@@ -1,5 +1,5 @@
 ---
-layout: layouts/menu.njk
+layout: layouts/pages/menu.njk
 permalink: /menu/
 title: Menu
 menus:
@@ -70,10 +70,4 @@ menus:
         items :
           - name: Item
             description: this is a description
-  - menu_name: Other
-    menu_items:
-      - category: Other1
-        items:
-          - name: Item1
-            description: crisp, clean and delicious
 ---

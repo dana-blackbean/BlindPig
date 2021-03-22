@@ -1,6 +1,6 @@
 {
   "site_title": "The Blind Pig",
-  "site_tagline": "This needs to be changed in settings.json",
+  "site_tagline": "Your new neighborhood pub in Cranbrook, BC.",
   "site_logo": "/static/img/logo.png",
   "social_image": "/static/img/logo.png",
   "site_noindex": true,

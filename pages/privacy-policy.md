@@ -9,7 +9,7 @@ subpage_content: >-
   Effective date: December 11th, 2020
 
 
-  Mountain Cannabis (“us”, “we”, or “our”) operates the www.mountaincannabisco.com website (the “Service”).
+  Mountain Cannabis (“us”, “we”, or “our”) operates the www.theblindpig.ca website (the “Service”).
 
 
   This page informs you of our policies regarding the collection, use, and disclosure of personal data when you use our Service and the choices you have associated with that data.
@@ -210,8 +210,8 @@ subpage_content: >-
   If you have any questions about this Privacy Policy, please contact us:
 
 
-  By email: [hi@mountaincannabisco.com](mailto:hi@mountaincannabisco.com)
+  By email: 
 
 
-  By phone number: (778) 604-1124
+  By phone number: 
 ---
